@@ -123,6 +123,14 @@
         color: #F7F7FC;
     }
 
+    .footer-brand {
+	    margin: 0 auto;
+	}
+
+	.footer-brand img{
+		margin: 15px auto;
+	}
+
 }
 
 @media (min-width: 1200px) {
