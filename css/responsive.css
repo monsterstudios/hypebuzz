@@ -1,0 +1,139 @@
+@media (max-width: 992px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .navbar-header {
+        width: 100%;
+    }
+
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: auto;
+        background-color: rgba(243, 6, 88, 0.8);
+        -webkit-box-shadow: 0 2px 4px 0 rgba(20, 20, 40, 0.10);
+        box-shadow: 0 2px 4px 0 rgba(20, 20, 40, 0.10);
+        color: rgba(25, 45, 55, 1);
+    }
+
+    .content_left,
+    .content_right {
+        padding: 2em 0;
+    }
+
+    .cta_block {
+        text-align: center;
+    }
+
+    .cta_block a {
+        margin: 10px 0 !important;
+        min-width: 200px;
+    }
+
+    .header-copyright {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .header-copyright {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: 10px;
+        padding: 0;
+        left: 0;
+        float: right;
+        background: #F20558;
+    }
+
+    .burger {
+        position: absolute;
+        background-color: #000000;
+        width: 30px;
+        height: 4px;
+        right: 0;
+        border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        margin: 0 auto;
+        top: 20px;
+    }
+
+    .navbar-toggler:focus .burger {
+        background-color: #ffffff;
+    }
+
+    .navbar-toggler:focus .burger::before,
+    .navbar-toggler:focus .burger::after {
+        background-color: #ffffff;
+    }
+
+    .burger::before {
+        position: absolute;
+        background-color: #000000;
+        width: 30px;
+        height: 4px;
+        top: 10px;
+        border-radius: 2px;
+        content: "";
+        display: block;
+    }
+
+    .burger::after {
+        position: absolute;
+        background-color: #000000;
+        width: 30px;
+        height: 4px;
+        bottom: 10px;
+        border-radius: 2px;
+        content: "";
+        display: block;
+    }
+
+    .burger::after,
+    .burger::before,
+    .burger {
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+    }
+
+    .burger-menu {
+        display: block;
+        height: 100%;
+    }
+
+    .sidebar-nav .nav-link {
+        color: #fff;
+    }
+
+    .sidebar-nav .nav-link:hover,
+    .sidebar-nav .nav-link:focus {
+        color: rgba(243, 6, 88, 1);
+    }
+
+    .footer .nav-link {
+        color: #F7F7FC;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .overlay {
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    #sidebar-wrapper{
+    	display: none;
+    }
+
+}
