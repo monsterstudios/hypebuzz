@@ -140,6 +140,10 @@
 	    padding-top: 0!important;
 	}
 
+	.cta_video{
+		display: none;
+	}
+
     .footer .nav-link {
         color: #F7F7FC;
     }
