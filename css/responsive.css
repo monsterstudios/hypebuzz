@@ -110,6 +110,10 @@
         height: 100%;
     }
 
+    .btn-lg.btn-rounded {
+    	font-size: 10px;
+    }
+
     .sidebar-nav .nav-link {
         color: #fff;
     }
@@ -118,6 +122,23 @@
     .sidebar-nav .nav-link:focus {
         color: rgba(243, 6, 88, 1);
     }
+
+    #section_4 .card {
+	    position: relative;
+	    top: 0;
+	}
+
+	#section_4 .card-body {
+	    padding: 60px 30px;
+	}
+
+	.pb-18em {
+	    padding-bottom: 0!important;
+	}
+
+	.pt-20em{
+	    padding-top: 0!important;
+	}
 
     .footer .nav-link {
         color: #F7F7FC;
