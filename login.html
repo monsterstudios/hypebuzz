@@ -26,10 +26,7 @@
         <section>
             <div class="container-fluid login_container">
                 <div class="row">
-                    <div class="col-lg-7 col-md-7 col-sm-6 col-12 login_bg d-lg-block d-none">
-                        <a class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<a target='_blank' href='https://instagram.com/theladyvhodka'><i class='fab fa-instagram'></i> @theladyvhodka</a>" data-html="true">
-                         </a>
-                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-6 col-12 login_bg d-lg-block d-none"></div>
                     <div class="col-lg-5 col-md-12 col-sm-12 col-12 login_content">
                         <h2><em>Welcome back!</em></h2>
                         <p>Please login to continue</p>
@@ -60,23 +57,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-        $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false})
-            .on("mouseover", function () {
-                var _this = this;
-                $(this).popover("show");
-                $(".popover").on("mouseleave", function () {
-                    $(_this).popover('hide');
-                });
-            }).on("mouseleave", function () {
-                var _this = this;
-                setTimeout(function () {
-                    if (!$(".popover:hover").length) {
-                        $(_this).popover("hide");
-                    }
-                }, 300);
-        });
-    </script>
 </body>
 
 </html>
