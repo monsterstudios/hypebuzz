@@ -8,6 +8,7 @@ $(function () {
             App.PlayVideo();
             App.Sidebar();
             App.SmoothScroll();
+            App.General();
         },
 
         PlayVideo: function(){
@@ -112,6 +113,12 @@ $(function () {
             }
           });
 
+        },
+
+        General: function(){            
+            $(function () {
+              $('[data-toggle="popover"]').popover();
+            });
         }
     };
 

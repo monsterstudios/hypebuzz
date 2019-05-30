@@ -10,6 +10,11 @@
     /* IE9 Compat Modes */
 }
 
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
 a,
 body {
     font-family: 'CircularStd';
@@ -30,6 +35,22 @@ h1 {
 
 .btn {
     font-family: 'CircularStd';
+}
+
+.btn-primary {
+    background: #FF015B !important;
+    border-color: #FF015B !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: #ef2d72 !important;
+}
+
+.form-control:focus {
+    border-color: #ff015b;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 1, 91, 0.25);
 }
 
 .parallax-window {
@@ -455,24 +476,24 @@ header {
     padding-bottom: 60px;
 }
 
-.py-50{
-	padding: 50px 0;
+.py-50 {
+    padding: 50px 0;
 }
 
-.pb-18em{
-	padding-bottom: 18em;
+.pb-18em {
+    padding-bottom: 18em;
 }
 
-.pt-20em{
-	padding-top: 20em;
+.pt-20em {
+    padding-top: 20em;
 }
 
-.mt-80{
-	margin-top: 80px;
+.mt-80 {
+    margin-top: 80px;
 }
 
-#section_4 .card-body{
-	padding: 60px 80px;
+#section_4 .card-body {
+    padding: 60px 80px;
 }
 
 #section_4 .card-body p {
@@ -517,14 +538,79 @@ header {
     z-index: 999;
 }
 
-.player-container .play-icon a{
-	color: #fff;
+.player-container .play-icon a {
+    color: #fff;
 }
 
-.player-container .play-icon a:hover{
-	color: #ff015b;
-	-webkit-transition: 0.3s;
+.player-container .play-icon a:hover {
+    color: #ff015b;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
+}
+
+.login_container {
+    min-height: 100vh;
+}
+
+.login_content {
+    min-height: 100vh;
+    padding: 8em 5em;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login_bg {
+    padding: 5%;
+    background-image: url("../img/login_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.login_content label {
+    font-weight: 700;
+}
+
+.login_content button[type="submit"] {
+    min-width: 200px;
+}
+
+.login_bg a {
+    width: 100%;
+    height: 100%;
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.login-page .popover {
+    top: -50% !important;
+    min-width: 200px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+.login-page .popover a{
+	color: #000;
+    font-family: 'Shrikhand';
+}
+
+.login-page .popover a:hover,
+.login-page .popover a:focus{
+	color: #FF015B;
+}
+
+.login-page .popover i {
+    padding-right: 10px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+
+.forgot-pass,
+.forgot-pass:hover,
+.forgot-pass:focus {
+    color: #FF015B;
 }
 
 .footer {
