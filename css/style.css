@@ -10,9 +10,12 @@
     /* IE9 Compat Modes */
 }
 
+
+a,
 a:hover,
 a:focus {
     text-decoration: none;
+    color: #FF015B;
 }
 
 a,
@@ -563,8 +566,25 @@ header {
     background-image: url("../img/login_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /*box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);*/
+    background-position: top center;
 }
+
+.creator_bg {
+    padding: 5%;
+    background-image: url("../img/creator_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.brand_bg {
+    padding: 5%;
+    background-image: url("../img/brand_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
 
 .login_content label {
     font-weight: 700;
@@ -590,27 +610,20 @@ header {
     line-height: 14px;
 }
 
-.login-page .popover a{
-	color: #000;
+.login-page .popover a {
+    color: #000;
     font-family: 'Shrikhand';
 }
 
 .login-page .popover a:hover,
-.login-page .popover a:focus{
-	color: #FF015B;
+.login-page .popover a:focus {
+    color: #FF015B;
 }
 
 .login-page .popover i {
     padding-right: 10px;
     font-size: 16px;
     vertical-align: middle;
-}
-
-
-.forgot-pass,
-.forgot-pass:hover,
-.forgot-pass:focus {
-    color: #FF015B;
 }
 
 .footer {

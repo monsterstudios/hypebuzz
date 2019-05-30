@@ -111,7 +111,7 @@
     }
 
     .btn-lg.btn-rounded {
-    	font-size: 10px;
+        font-size: 10px;
     }
 
     .sidebar-nav .nav-link {
@@ -124,49 +124,63 @@
     }
 
     #section_4 .card {
-	    position: relative;
-	    top: 0;
-	}
+        position: relative;
+        top: 0;
+    }
 
-	#section_4 .card-body {
-	    padding: 60px 30px;
-	}
+    #section_4 .card-body {
+        padding: 60px 30px;
+    }
 
-	.pb-18em {
-	    padding-bottom: 0!important;
-	}
+    .pb-18em {
+        padding-bottom: 0 !important;
+    }
 
-	.pt-20em{
-	    padding-top: 0!important;
-	}
+    .pt-20em {
+        padding-top: 0 !important;
+    }
 
-	.cta_video{
-		display: none;
-	}
+    .cta_video {
+        display: none;
+    }
 
     .footer .nav-link {
         color: #F7F7FC;
     }
 
     .footer-brand {
-	    margin: 0 auto;
-	}
+        margin: 0 auto;
+    }
 
-	.footer-brand img{
-		margin: 15px auto;
-	}
+    .footer-brand img {
+        margin: 15px auto;
+    }
 
-	.login_content{
-		background: #FF015B;
-		color: #fff;
-	}
+    .login_content {
+        background: #FF015B;
+        color: #fff;
+    }
 
-	.login_content .btn-primary{
-		background: #f7f7fc!important;
-		border-color: #f7f7fc!important;
-		color: #000;
-		width: 100%;
-	}
+    .login_content h6{
+    	text-align: center;
+    }
+
+    .login_content .btn-primary {
+        background: #f7f7fc !important;
+        border-color: #f7f7fc !important;
+        color: #000;
+        width: 100%;
+    }
+
+    .form-link {
+        text-align: center;
+    }
+
+    .form-link a {
+        color: #fff !important;
+        display: block;
+        padding: 5px 0 !important;
+    }
 
 }
 
@@ -177,8 +191,8 @@
         min-width: 100vw;
     }
 
-    #sidebar-wrapper{
-    	display: none;
+    #sidebar-wrapper {
+        display: none;
     }
 
 }
