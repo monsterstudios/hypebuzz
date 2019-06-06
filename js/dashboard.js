@@ -1,0 +1,69 @@
+$(function() {
+    var App = {
+
+        /**
+         * Init Function
+         */
+        init: function() {
+            App.General();
+        },
+
+        General: function() {
+            $(function() {
+
+                $('.editor').click(function() {
+                    $(this).each(function(n) {
+                        $(this).closest('.form-edit').find('input').removeAttr('readonly');
+                        $(this).closest('.form-edit').find('input').removeClass('form-control-plaintext').addClass('form-control');
+                        $(this).closest('.form-edit').find('.field-icon').show();
+                        $(this).closest('.form-edit').find('.bootstrap-tagsinput input').show();
+                    })
+                });
+
+                $(".toggle-password").click(function() {
+                    $(this).toggleClass("fa-eye fa-eye-slash");
+                    var input = $($(this).attr("toggle"));
+                    if (input.attr("type") == "password") {
+                        input.attr("type", "text");
+                    } else {
+                        input.attr("type", "password");
+                    }
+                });
+
+
+                $('.sidebar-toggle .dropdown').on('show.bs.dropdown', function(e){
+                    $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+                });
+
+                $('.sidebar-toggle .dropdown').on('hide.bs.dropdown', function(e){
+                    $(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
+                });
+
+
+                $(".navbar-toggler").click(function(e) {
+                    e.preventDefault();
+                    var elem = document.getElementById("sidebar-wrapper");
+                    left = window.getComputedStyle(elem,null).getPropertyValue("left");
+                    if(left == "200px"){
+                        document.getElementsByClassName("sidebar-toggle")[0].style.left="-200px";
+                    }
+                    else if(left == "-200px"){
+                        document.getElementsByClassName("sidebar-toggle")[0].style.left="200px";
+                    }
+                });
+
+                function getPageHeight(){
+                    var height = (window.innerHeight > 0) ? window.innerHeight : document.documentElement.clientHeight;
+                    $('.sidebar-nav').css('height',height-90);
+                }
+                window.onresize = getPageHeight();
+                getPageHeight();
+            });
+        }
+    };
+
+    $(function() {
+        App.init();
+    });
+
+});
