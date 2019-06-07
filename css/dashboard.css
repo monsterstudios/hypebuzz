@@ -563,6 +563,53 @@ h1 {
     display: none;
 }
 
+.icon.social {
+    width: 25px;
+    height: 25px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 3px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.social-accounts a>span {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social-accounts a>.edit.icon {
+    background: #2ba24c;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px;
+}
+
+.social-accounts a>.delete.icon {
+    background: #fe1616;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px;
+}
+
+.social-accounts a>span:hover {
+    opacity: .7;
+}
+
+.money-earned h4 span {
+    color: #ff015b;
+}
+
+.money-earned h4 i {
+    padding: 0 20px;
+}
+
 .footer {
     background: #000000;
     -webkit-box-shadow: 0 2px 4px 0 rgba(20, 20, 40, 0.10);
