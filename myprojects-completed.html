@@ -8,11 +8,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
-    <title>Hypebuzz - Wallet</title>
+    <title>Hypebuzz - My Projects - Completed</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput-typeahead.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.10/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css" />
     <link href="css/dashboard.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,7 +31,7 @@
             <li>
                 <div class="earnings"><i class="fas fa-coins"></i> Amount Earned: <span>N1.5M</span></div>
             </li>
-            <li class="">
+            <li>
                 <a href="dashboard.html" class="dropdown-toggle" data-toggle="collapse" data-target="#dashboard" role="button" aria-expanded="true">
                     <i class="fas fa-user-circle"></i>Dashboard
                 </a>
@@ -42,13 +43,13 @@
             <li>
                 <a href="sponsorships.html"><i class="fas fa-volume-off"></i> Sponsorships</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="myprojects.html"><i class="fas fa-cog"></i> My Projects</a>
             </li>
             <li>
                 <a href="#"><i class="fas fa-envelope"></i> Messages</a>
             </li>
-            <li class="active dropdown">
+            <li>
                 <a href="wallet.html" class="dropdown-toggle" data-toggle="collapse" data-target="#wallet" role="button" aria-expanded="true">
                     <i class="fas fa-coins"></i>Wallet
                 </a>
@@ -58,7 +59,13 @@
                 </ul>
             </li>
             <li>
-                <a href="invite-earn.html"><i class="fas fa-users"></i> Invite & Earn</a>
+                <a href="invite-earn.html" class="dropdown-toggle" data-toggle="collapse" data-target="#wallet" role="button" aria-expanded="true">
+                    <i class="fas fa-users"></i>Invite & Earn
+                </a>
+                <ul class="collapse in" id="wallet" aria-expanded="true" style="">
+                    <li><a href="invite-earn.html"><i class="fas fa-angle-right"></i> Invite & Earn</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Amount Earned</a></li>
+                </ul>
             </li>
         </ul>
         <div class="sidebar-copyright">
@@ -105,109 +112,100 @@
             <div class="inner-wrapper">
                 <div class="inner-sidebar">
                     <ul>
-                        <li class="active"><a href="wallet.html">Money Earned</a></li>
-                        <li><a href="#">Bank Details</a></li>
+                        <li><a href="myprojects.html">Proposed</a></li>
+                        <li><a href="myprojects-invited.html">Invited</a></li>
+                        <li class="active"><a href="myprojects-completed.html">Completed</a></li>
                     </ul>
                 </div>
-                <div class="sub-content">
+                <div class="sub-content myprojects">
                     <div class="container">
                         <div class="row mt-5">
                             <div class="col-lg-12">
-                                <div class="row money-earned">
-                                    <div class="col-lg-6">
-                                        <h4>Money Earned</h4>
+                                <div class="row">
+                                    <div class="col-lg-7 col-sm-7 col-12">
+                                        <h4>Proposed</h4>
+                                        <p>Here’s a list of all the projects you’ve completed</p>
                                     </div>
-                                    <div class="col-lg-6 text-right">
-                                        <h4><i class="fas fa-coins"></i> <span>N 1,567,000.67</span></h4>
+                                    <div class="col-lg-5 col-sm-5 col-12">
+                                        <div class="form-group">
+                                            <select class="selectpicker" data-style="btn-light rounded-pill">
+                                              <option>Most Recent</option>
+                                              <option>Highest</option>
+                                              <option>Lowest</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-12 col-sm-12 col-12">
+                                    <div class="col-lg-12">
                                         <div class="table-responsive mt-3">
                                             <table id="table" class="table table-striped">
                                                 <thead>
-                                                    <tr>
-                                                        <th>Date</th>
-                                                        <th>Project Name</th>
-                                                        <th>Brand</th>
-                                                        <th>Total Fee</th>
-                                                    </tr>
+                                                    <th>Date</th>
+                                                    <th>Project Name</th>
+                                                    <th>Brand</th>
+                                                    <th>Total Fee</th>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td>
-                                                            20/4/2019
+                                                            20/08/2019
                                                         </td>
                                                         <td>
-                                                            <a href="#">Make money, spend money</a>
+                                                            <a href="#">Make Money, Spend Money</a> 
                                                         </td>
                                                         <td>
                                                             Google
                                                         </td>
                                                         <td>
-                                                            <h6 class="mb-0">N 300K</h6>
+                                                            <h6>N300K</h6>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            20/4/2019
+                                                            20/08/2019
                                                         </td>
                                                         <td>
-                                                            <a href="#">Make money, spend money</a>
+                                                            <a href="#">Make Money, Spend Money</a> 
                                                         </td>
                                                         <td>
                                                             Google
                                                         </td>
                                                         <td>
-                                                            <h6 class="mb-0">N 300K</h6>
+                                                            <h6>N300K</h6>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            20/4/2019
+                                                            20/08/2019
                                                         </td>
                                                         <td>
-                                                            <a href="#">Make money, spend money</a>
+                                                            <a href="#">Make Money, Spend Money</a> 
                                                         </td>
                                                         <td>
                                                             Google
                                                         </td>
                                                         <td>
-                                                            <h6 class="mb-0">N 300K</h6>
+                                                            <h6>N300K</h6>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            20/4/2019
+                                                            20/08/2019
                                                         </td>
                                                         <td>
-                                                            <a href="#">Make money, spend money</a>
-                                                        </td>
-                                                        <td>
-                                                            Google
-                                                        </td>
-                                                        <td>
-                                                            <h6 class="mb-0">N 300K</h6>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            20/4/2019
-                                                        </td>
-                                                        <td>
-                                                            <a href="#">Make money, spend money</a>
+                                                            <a href="#">Make Money, Spend Money</a> 
                                                         </td>
                                                         <td>
                                                             Google
                                                         </td>
                                                         <td>
-                                                            <h6 class="mb-0">N 300K</h6>
+                                                            <h6>N300K</h6>
                                                         </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                        </div>
-                                        <a href="#" class="btn btn-primary btn-rounded btn-icon btn-lg my-5">Withdraw Money Earned <i class="fas fa-chevron-right"></i></a>
+                                        </div>            
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +218,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.10/js/bootstrap-select.min.js"></script>
     <script src="js/dashboard.js"></script>
 </body>
 

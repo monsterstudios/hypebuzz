@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <title>Hypebuzz - Sponsorships</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css" />
+    <link href="css/rangeslider.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="sidebar-wrapper" class="sidebar-toggle">
+        <ul class="sidebar-nav">
+            <li class="sidebar-logo">
+                <a href="index.html"><img src="img/HB-White@4x.png" class="img-responsive"></a>
+            </li>
+            <li>
+                <div class="earnings"><i class="fas fa-coins"></i> Amount Earned: <span>N1.5M</span></div>
+            </li>
+            <li class="">
+                <a href="dashboard.html" class="dropdown-toggle" data-toggle="collapse" data-target="#dashboard" role="button" aria-expanded="true">
+                    <i class="fas fa-user-circle"></i>Dashboard
+                </a>
+                <ul class="collapse in" id="dashboard" aria-expanded="true" style="">
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Profile Settings</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Social Accounts</a></li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="#"><i class="fas fa-volume-off"></i> Sponsorships</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-cog"></i> My Projects</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-envelope"></i> Messages</a>
+            </li>
+            <li class="">
+                <a href="wallet.html" class="dropdown-toggle" data-toggle="collapse" data-target="#wallet" role="button" aria-expanded="true">
+                    <i class="fas fa-coins"></i>Wallet
+                </a>
+                <ul class="collapse in" id="wallet" aria-expanded="true" style="">
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Money Earned</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Bank Details</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="invite-earn.html" class="dropdown-toggle" data-toggle="collapse" data-target="#wallet" role="button" aria-expanded="true">
+                    <i class="fas fa-users"></i>Invite & Earn
+                </a>
+                <ul class="collapse in" id="wallet" aria-expanded="true" style="">
+                    <li><a href="invite-earn.html"><i class="fas fa-angle-right"></i> Invite & Earn</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Amount Earned</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-copyright">
+            <p>© HypeBuzz Technologies Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <nav class="navbar navbar-light" role="navigation">
+            <div class="container-fluid">
+                <div class="col-lg-3 col-sm-3 d-lg-block d-none">
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary btn-md btn-rounded btn-icon">View Sponsorship <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 d-lg-block d-none">
+                    <div class="earnings-container text-center">
+                        <div class="earnings"><i class="fas fa-coins"></i> Amount Earned: <span>N1.5M</span></div>
+                        <a href="#" class="btn btn-dark btn-md btn-rounded btn-icon">Wallet <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-12">
+                    <div class="profile-container navbar-expand-lg">
+                        <button class="navbar-toggler">
+                            <span class="burger-menu">
+                                <span class="burger"></span>
+                            </span>
+                        </button>
+                        <a href="#"><i class="fas fa-envelope"></i><sup></sup></a>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hi Maraji
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">View Sponsorship</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                        <img src="img/profile-img.png" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content-wrapper sponsorship-content">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 col-12 order-lg-last">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="sponsorship-filter">
+                                <div class="filter-logic">
+                                    <h6>Sort by</h6>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="budget" value="recent" checked>
+                                      <label class="form-check-label">
+                                        Most Recent
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="budget" value="lowest">
+                                      <label class="form-check-label">
+                                        Lowest Budget First
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="budget" value="highest">
+                                      <label class="form-check-label">
+                                        Highest Budget First
+                                      </label>
+                                    </div>
+                                </div>   
+                                <div class="filter-logic"> 
+                                    <h6>Brands</h6>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="brands" value="all">
+                                      <label class="form-check-label">
+                                        All Brands
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="brands" value="featured" checked>
+                                      <label class="form-check-label">
+                                        Featured Brands
+                                      </label>
+                                    </div>
+                                </div>    
+                                <div class="filter-logic"> 
+                                    <h6>Budget Range</h6>
+                                    <div class="range-group">
+                                        <input type="range" min="50000" max="100000" step="25" data-rangeslider>
+                                        <div class="range">
+                                          <small class="min float-left">Min</small>
+                                          <small class="max float-right">Max</small>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="filter-logic"> 
+                                    <h6>Primary Audience Gender</h6>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="gender" value="any" checked="">
+                                      <label class="form-check-label">
+                                        Any Gender
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="gender" value="female">
+                                      <label class="form-check-label">
+                                        Female
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="gender" value="male">
+                                      <label class="form-check-label">
+                                        Male
+                                      </label>
+                                    </div>
+                                </div> 
+                                <div class="filter-logic"> 
+                                    <h6>Category</h6>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="category" value="entertainment">
+                                      <label class="form-check-label">
+                                        Entertainment
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="category" value="tech" checked>
+                                      <label class="form-check-label">
+                                        Tech
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="category" value="fashion">
+                                      <label class="form-check-label">
+                                        Fashion
+                                      </label>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12 col-12 order-lg-first">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Here are some of our <a href="#">49,000</a> sponsorships. <a href="#">View Sponsorships</a> to submit a proposal</p>
+                            <ul>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-4 p-0">
+                                            <img src="//placehold.it/800x1067" class="img-fluid">
+                                        </div>
+                                        <div class="col-lg-9 col-sm-8 p-0">
+                                            <div class="sponsor-text">
+                                                <h6>Google - Launh of the new Google Pixel 
+                                                <span>Budget: <span>N1.2M</span></span></h6>
+                                            </div>
+                                            <div class="row px-4">
+                                                <div class="col-lg-3 col-sm-6 p-0">
+                                                    <p>Audience</p>
+                                                    <h6>Male (18-24)</h6>
+                                                </div>
+                                                <div class="col-lg-3 col-sm-6 p-0">
+                                                    <p>Platforms</p>
+                                                    <a href="#"><span class="social icon"><i class="fab fa-facebook-f"></i></span></a>
+                                                    <a href="#"><span class="social icon"><i class="fab fa-youtube"></i></span></a>
+                                                    <a href="#"><span class="social icon"><i class="fab fa-twitter"></i></span></a>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-6 p-0">
+                                                    <p>Category</p>
+                                                    <h6>Entertainment</h6>
+                                                </div>
+                                                <div class="col-lg-2 p-0 col-sm-6">
+                                                    <p>Country</p>
+                                                    <span class="flag-icon flag-icon-ng"></span>
+                                                </div>
+                                            </div>  
+                                            <div class="row px-4 mt-2">
+                                                <div class="col-lg-8 col-sm-7 p-0">
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod et dolore magna aliqua. Quis ipsum suspe.</p>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-5 p-0 text-center">
+                                                    <a href="#" class="btn btn-primary btn-sm btn-rounded btn-icon">Request <i class="fas fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-4 p-0">
+                                            <img src="//placehold.it/800x1067" class="img-fluid">
+                                        </div>
+                                        <div class="col-lg-9 col-sm-8 p-0">
+                                            <div class="sponsor-text">
+                                                <h6>Google - Launh of the new Google Pixel 
+                                                <span>Budget: <span>N1.2M</span></span></h6>
+                                            </div>
+                                            <div class="row px-4">
+                                                <div class="col-lg-3 col-sm-6 p-0">
+                                                    <p>Audience</p>
+                                                    <h6>Male (18-24)</h6>
+                                                </div>
+                                                <div class="col-lg-3 col-sm-6 p-0">
+                                                    <p>Platforms</p>
+                                                    <a href="#"><span class="social icon"><i class="fab fa-facebook-f"></i></span></a>
+                                                    <a href="#"><span class="social icon"><i class="fab fa-youtube"></i></span></a>
+                                                    <a href="#"><span class="social icon"><i class="fab fa-twitter"></i></span></a>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-6 p-0">
+                                                    <p>Category</p>
+                                                    <h6>Entertainment</h6>
+                                                </div>
+                                                <div class="col-lg-2 p-0 col-sm-6">
+                                                    <p>Country</p>
+                                                    <span class="flag-icon flag-icon-ng"></span>
+                                                </div>
+                                            </div>  
+                                            <div class="row px-4 mt-2">
+                                                <div class="col-lg-8 col-sm-7 p-0">
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod et dolore magna aliqua. Quis ipsum suspe.</p>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-5 p-0 text-center">
+                                                    <a href="#" class="btn btn-primary btn-sm btn-rounded btn-icon">Request <i class="fas fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-4 p-0">
+                                            <img src="//placehold.it/800x1067" class="img-fluid">
+                                        </div>
+                                        <div class="col-lg-9 col-sm-8 p-0">
+                                            <div class="sponsor-text">
+                                                <h6>Google - Launh of the new Google Pixel 
+                                                <span>Budget: <span>N1.2M</span></span></h6>
+                                            </div>
+                                            <div class="row px-4">
+                                                <div class="col-lg-3 col-sm-6 p-0">
+                                                    <p>Audience</p>
+                                                    <h6>Male (18-24)</h6>
+                                                </div>
+                                                <div class="col-lg-3 col-sm-6 p-0">
+                                                    <p>Platforms</p>
+                                                    <a href="#"><span class="social icon"><i class="fab fa-facebook-f"></i></span></a>
+                                                    <a href="#"><span class="social icon"><i class="fab fa-youtube"></i></span></a>
+                                                    <a href="#"><span class="social icon"><i class="fab fa-twitter"></i></span></a>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-6 p-0">
+                                                    <p>Category</p>
+                                                    <h6>Entertainment</h6>
+                                                </div>
+                                                <div class="col-lg-2 p-0 col-sm-6">
+                                                    <p>Country</p>
+                                                    <span class="flag-icon flag-icon-ng"></span>
+                                                </div>
+                                            </div>  
+                                            <div class="row px-4 mt-2">
+                                                <div class="col-lg-8 col-sm-7 p-0">
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod et dolore magna aliqua. Quis ipsum suspe.</p>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-5 p-0 text-center">
+                                                    <a href="#" class="btn btn-primary btn-sm btn-rounded btn-icon">Request <i class="fas fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/rangeslider.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
