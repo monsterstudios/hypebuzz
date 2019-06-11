@@ -860,6 +860,11 @@ h1 {
     color: #fff;
 }
 
+.dropdown-item.active, 
+.dropdown-item:active {
+    background-color: #ff015b;
+}
+
 .footer {
     background: #000000;
     -webkit-box-shadow: 0 2px 4px 0 rgba(20, 20, 40, 0.10);
