@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <title>Hypebuzz - Campaign History</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput-typeahead.css" />
+    <link href="css/dashboard.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="sidebar-wrapper" class="sidebar-toggle">
+        <ul class="sidebar-nav">
+            <li class="sidebar-logo">
+                <a href="index.html"><img src="img/HB-White@4x.png" class="img-responsive"></a>
+            </li>
+            <li>
+                <div class="earnings"><i class="fas fa-coins"></i> Account Balance: <span>N1.5M</span></div>
+            </li>
+            <li class="active dropdown">
+                <a href="brands-dashboard.html" class="dropdown-toggle" data-toggle="collapse" data-target="#sub_dashboard" role="button" aria-expanded="true">
+                    <i class="fas fa-user-circle"></i>Dashboard
+                </a>
+                <ul class="collapse in" id="sub_dashboard" aria-expanded="true" style="">
+                    <li><a href="brands-dashboard.html"><i class="fas fa-angle-right"></i> Profile Settings</a></li>
+                    <li class="active"><a href="campaign-history.html"><i class="fas fa-angle-right"></i> Campaign History</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="all-campaigns.html" class="dropdown-toggle" data-toggle="collapse" data-target="#sub_campaign" role="button" aria-expanded="true">
+                    <i class="fas fa-volume-off"></i> Campaigns</a>
+                </a>
+                <ul class="collapse in" id="sub_campaign" aria-expanded="true" style="">
+                    <li><a href="all-campaigns.html"><i class="fas fa-angle-right"></i> All Campaigns</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Live</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Completed</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Cancelled</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="messages-brands.html" class="dropdown-toggle" data-toggle="collapse" data-target="#sub_messages" role="button" aria-expanded="true">
+                    <i class="fas fa-envelope"></i> Messages
+                </a>
+                <ul class="collapse in" id="sub_messages" aria-expanded="true" style="">
+                    <li><a href="messages-brands.html"><i class="fas fa-angle-right"></i> Read</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Unread</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="invoices.html" class="dropdown-toggle" data-toggle="collapse" data-target="#sub_invoices" role="button" aria-expanded="true">
+                    <i class="fas fa-coins"></i> Payments
+                </a>
+                <ul class="collapse in" id="sub_invoices" aria-expanded="true" style="">
+                    <li><a href="invoices.html"><i class="fas fa-angle-right"></i> Invoices</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> History</a></li>
+                    <li><a href="load-funds.html"><i class="fas fa-angle-right"></i> Load Funds</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="proposals.html"><i class="fas fa-file-alt"></i> Proposals</a>
+            </li>
+        </ul>
+        <div class="sidebar-copyright">
+            <p>© HypeBuzz Technologies Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <nav class="navbar navbar-light" role="navigation">
+            <div class="container-fluid">
+                <div class="col-lg-3 col-sm-3 d-lg-block d-none">
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary btn-md btn-rounded btn-icon">Create campaign <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 d-lg-block d-none">
+                    <div class="earnings-container text-center">
+                        <div class="earnings"><i class="fas fa-coins"></i> Account Balance: <span>N200k</span></div>
+                        <a href="#" class="btn btn-success btn-md btn-rounded btn-icon">Add Credit <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-12">
+                    <div class="profile-container navbar-expand-lg">
+                        <button class="navbar-toggler">
+                            <span class="burger-menu">
+                                <span class="burger"></span>
+                            </span>
+                        </button>
+                        <a href="#"><i class="fas fa-envelope"></i><sup></sup></a>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hi Maraji
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">View Sponsorship</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                        <img src="img/profile-img.png" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content-wrapper">
+            <div class="inner-wrapper">
+                <div class="inner-sidebar">
+                    <ul>
+                        <li><a href="brands-dashboard.html">Profile Settings</a></li>
+                        <li class="active"><a href="campaign-history.html">Campaign History</a></li>
+                    </ul>
+                </div>
+                <div class="sub-content">
+                    <div class="container">
+                        <div class="row mt-5">
+                            <div class="col-lg-12">
+                                <div class="text-center my-5 py-5">
+                                    <h3 class="mb-4">No Campaigns</h3>
+                                    <p>You don't have any campaigns yet.<br>You can create a new campaign by clicking the button below</p>
+                                    <a href="#" class="btn btn-primary btn-rounded btn-icon btn-lg my-3">Create Campaign <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

@@ -57,8 +57,6 @@ $(function() {
                     $(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
                 });
 
-                $('select').selectpicker(); 
-
                 $(".navbar-toggler").click(function(e) {
                     e.preventDefault();
                     var elem = document.getElementById("sidebar-wrapper");
