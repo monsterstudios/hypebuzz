@@ -51,7 +51,13 @@
                             <a class="nav-link" href="login.html"> Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-btn text-dark btn btn-light btn-md btn-rounded btn-icon" href="signup-creator.html">Join Today! <i class="fas fa-chevron-right"></i></a>
+                            <div class="btn-group" role="group">
+                              <button type="button" class="nav-link nav-btn text-dark btn btn-light btn-md btn-rounded dropdown-toggle" data-toggle="dropdown">Join Today!</button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="signup-creator.html">Creator</a>
+                                <a class="dropdown-item" href="signup-brand.html">Brands/Agencies</a>
+                              </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -185,7 +191,7 @@
                                         <div class="player-container">
                                             <img src="img/vid1.png" class="img-fluid">
                                             <div class="play-icon">
-                                                <a href="#"><i class="far fa-play-circle"></i></a>
+                                                <a id="campaign1" href="javascript:void(0)"><i class="far fa-play-circle"></i></a>
                                             </div>
                                         </div>
                                         <h5>Minimie X Lasisi</h5>
@@ -195,7 +201,7 @@
                                         <div class="player-container">
                                             <img src="img/vid2.png" class="img-fluid">
                                             <div class="play-icon">
-                                                <a href="#"><i class="far fa-play-circle"></i></a>
+                                                <a id="campaign2" href="javascript:void(0)"><i class="far fa-play-circle"></i></a>
                                             </div>
                                         </div>
                                         <h5>Google x Mayorkun</h5>
@@ -205,11 +211,11 @@
                                         <div class="player-container">
                                             <img src="img/vid3.png" class="img-fluid">
                                             <div class="play-icon">
-                                                <a href="#"><i class="far fa-play-circle"></i></a>
+                                                <a id="campaign3" href="javascript:void(0)"><i class="far fa-play-circle"></i></a>
                                             </div>
                                         </div>
                                         <h5>Cowrywise X Maraji</h5>
-                                        <p>Cowrywise, a YC backed startup built an app to make saving and investing easy for everyone irrespective of their income.</p>
+                                        <p>Cowrywise a YC backed startup making investing easy for everyone, used HypeBuzz to encourage savers to download their app or go on their website to open an account.</p>
                                     </div>
                                 </div>
                             </div>
@@ -219,6 +225,7 @@
             </div>
         </section>
         <div id="footer" class="footer text-center text-lg-left">
+            <a id="back-to-top" href="#" class="show"></a>
             <div class="overlay pt-20em">
                 <div class="container p-90-0-60">
                     <div class="row mb-30">
@@ -226,29 +233,28 @@
                             <a class="footer-brand" href="#home"><img src="img/HB-White@4x.png" alt="logo" class="footer-logo"></a>
                         </div>
                         <div class="col-12 col-lg-3 mb-30">
-                            <h4 class="bold mb-30" style="color:rgba(243, 6, 88, 1);">Platform</h4>
+                            <h4 class="bold mb-30" style="color:rgba(243, 6, 88, 1);">Products</h4>
                             <ul>
                                 <li><a href="#.">Creator</a></li>
                                 <li><a href="#.">Brands &amp; Agencies</a></li>
                                 <li><a href="#.">Pricing</a></li>
-                                <li><a href="#.">Community</a></li>
+                                <li><a href="#.">Blog</a></li>
                             </ul>
                         </div>
                         <div class="col-12 col-lg-3 mb-30">
                             <h4 class="bold mb-30" style="color:rgba(243, 6, 88, 1);">Company</h4>
                             <ul>
                                 <li><a href="#.">About</a></li>
-                                <li><a href="#.">Careers</a></li>
+                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfDB_-wvjl5GPQCmO3Z_PnsnAPjiqhNPMBTVlwPYhTIVurmDA/viewform" target="_blank">Careers</a></li>
+                                <li><a href="#">HB Creative Fund</a></li>
                             </ul>
                         </div>
                         <div class="col-12 col-lg-3 mb-30">
                             <h4 class="bold mb-30" style="color:rgba(243, 6, 88, 1);">Resources</h4>
                             <ul>
-                                <li><a href="#.">Help</a></li>
-                                <li><a href="#.">Support</a></li>
+                                <li><a href="mailto:support@hypebuzzhq.com" target="_blank">Help</a></li>
                                 <li><a href="#.">Terms of Use</a></li>
                                 <li><a href="#.">Privacy</a></li>
-                                <li><a href="#.">Licenses</a></li>
                             </ul>
                         </div>
                     </div>
@@ -259,18 +265,23 @@
                                 <div class="navbar-collapse">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link pl-0">
+                                            <a href="https://www.instagram.com/hypebuzzhq/" class="nav-link pl-0" target="_blank">
                                                 INSTAGRAM
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">
+                                            <a href="https://twitter.com/hypebuzzhq" class="nav-link" target="_blank">
                                                 TWITTER
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">
+                                            <a href="https://www.facebook.com/Hypebuzzhq/" class="nav-link" target="_blank">
                                                 FACEBOOK
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="https://www.linkedin.com/company/hypebuzz/" class="nav-link" target="_blank">
+                                                LINKEDIN
                                             </a>
                                         </li>
                                     </ul>
@@ -278,7 +289,7 @@
                             </nav>
                         </div>
                         <div class="col-md-6 text-right">
-                            <p class="footer-copyright"> © HyperBuzz, LLC. All Rights Reserved. Stay Famous </p>
+                            <p class="footer-copyright"> © HypeBuzz Technologies Limited, All Rights Reserved. </p>
                         </div>
                         <!-- Copy end -->
                     </div>

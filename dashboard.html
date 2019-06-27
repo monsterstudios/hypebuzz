@@ -12,7 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput-typeahead.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
     <link href="css/dashboard.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -159,7 +159,7 @@
                                                 <form class="mt-4">
                                                     <div class="form-group row">
                                                         <div class="col-sm-12">
-                                                            <input type="text" readonly class="form-control-plaintext" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit">
+                                                            <input type="text" readonly class="form-control-plaintext" value="" placeholder="Incase brands need to send items to you">
                                                         </div>
                                                     </div>
                                                 </form>
@@ -180,7 +180,180 @@
                                                 <form class="mt-4">
                                                     <div class="form-group row">
                                                         <div class="col-sm-12">
-                                                            <input type="text" data-role="tagsinput" readonly class="form-control-plaintext" value="Fashion, Shopping, Reading">
+                                                            <select disabled="" class="select2 form-control-static w-100" name="interest[]" multiple="multiple">
+                                                                <optgroup label="Automotive">
+                                                                    <option>Automotive news and general info</option>
+                                                                    <option>Car culture</option>
+                                                                    <option>Convertibles</option>
+                                                                    <option>Hybrid and electric vehicles</option>
+                                                                    <option selected="">Luxury</option>
+                                                                    <option>Minivans</option>
+                                                                    <option>Motorcycles</option>
+                                                                    <option>Off-road vehicles</option>
+                                                                    <option>Performance vehicles</option>
+                                                                    <option>Sedans</option>
+                                                                    <option>SUV’s</option>
+                                                                    <option>Trucks</option>
+                                                                    <option>Vintage cars</option>
+                                                                </optgroup>
+                                                                <optgroup label="Beauty">
+                                                                    <option>Body art</option>
+                                                                    <option>Face care</option>
+                                                                    <option>General info</option>
+                                                                    <option>Hair care</option>
+                                                                    <option>Make-up and cosmetics</option>
+                                                                    <option>Perfumes and fragrances</option>
+                                                                    <option>Shaving and grooming</option>
+                                                                    <option>Skin care</option>
+                                                                    <option>Spa and medical spa</option>
+                                                                    <option>Tanning and sun care</option>
+                                                                </optgroup>
+                                                                <optgroup label="Books and Literature">
+                                                                    <option>Biographies and memoirs</option>
+                                                                    <option>Books news and general info</option>
+                                                                    <option>Business and finance</option>
+                                                                    <option>Comics</option>
+                                                                    <option>Cookbooks, food, and wine</option>
+                                                                    <option>Health, mind, and body</option>
+                                                                    <option>Shaving and grooming</option>
+                                                                    <option>Mystery and crime</option>
+                                                                    <option>Nonfiction</option>
+                                                                    <option>Politics and current events</option>
+                                                                    <option>Romance</option>
+                                                                </optgroup>
+                                                                <optgroup label="Business">
+                                                                    <option>Advertising</option>
+                                                                    <option>Biotech and biomedical</option>
+                                                                    <option>Business news and general info</option>
+                                                                    <option>Business software</option>
+                                                                    <option>Construction</option>
+                                                                    <option>Entrepreneurship</option>
+                                                                    <option>Government</option>
+                                                                    <option>Green solutions</option>
+                                                                    <option>Human resources</option>
+                                                                    <option>Investors and patents</option>
+                                                                    <option>Leadership</option>
+                                                                    <option>Marketing</option>
+                                                                    <option>Nonprofit</option>
+                                                                    <option>Small business</option>
+                                                                    <option>Technology</option>
+                                                                </optgroup>
+                                                                <optgroup label="Careers">
+                                                                    <option>Career news and general info</option>
+                                                                    <option>Job fairs</option>
+                                                                    <option>Job search</option>
+                                                                    <option>U.S. Military</option>
+                                                                </optgroup>
+                                                                <optgroup label="Education">
+                                                                    <option>Adult education</option>
+                                                                    <option>College life</option>
+                                                                    <option>Education news and general info</option>
+                                                                    <option>Graduate school</option>
+                                                                    <option>Homeschooling</option>
+                                                                    <option>Language learning</option>
+                                                                    <option>Online education</option>
+                                                                    <option>Special education</option>
+                                                                </optgroup>
+                                                                <optgroup label="Events">
+                                                                    <option>Entertainment awards</option>
+                                                                    <option>Holidays</option>
+                                                                    <option>Movie festivals</option>
+                                                                    <option>Music festivals and concerts</option>
+                                                                    <option>Political elections</option>
+                                                                    <option>Sporting events</option>
+                                                                    <option>Tech tradeshows</option>
+                                                                </optgroup>
+                                                                <optgroup label="Family and Parenting">
+                                                                    <option>Babies and toddlers</option>
+                                                                    <option>Daycare and preschool</option>
+                                                                    <option>Elder care</option>
+                                                                    <option>Parenting K-6 kids</option>
+                                                                    <option>Parenting teens</option>
+                                                                </optgroup>
+                                                                <optgroup label="Food and Drink">
+                                                                    <option>American cuisine</option>
+                                                                    <option>Barbecues and grilling</option>
+                                                                    <option>Bars and nightlife</option>
+                                                                    <option>Beer</option>
+                                                                    <option>Cajun and Creole</option>
+                                                                    <option>Chinese cuisine</option>
+                                                                    <option>Cocktails and beer</option>
+                                                                    <option>Coffee and tea</option>
+                                                                    <option>Cooking</option>
+                                                                    <option>Desserts and baking</option>
+                                                                    <option>Dining out</option>
+                                                                    <option>Ethnic foods</option>
+                                                                    <option>Fast food</option>
+                                                                    <option>Fine dining</option>
+                                                                    <option>Foodie news and general info</option>
+                                                                    <option>French cuisine</option>
+                                                                    <option>Italian cuisine</option>
+                                                                    <option>Japanese cuisine</option>
+                                                                    <option>Liquor and spirits</option>
+                                                                    <option>Mexican cuisine</option>
+                                                                    <option>Vegan</option>
+                                                                    <option>Vegetarian</option>
+                                                                    <option>Wine</option>
+                                                                </optgroup>
+                                                                <optgroup label="Gaming">
+                                                                    <option>Board gaming</option>
+                                                                    <option>Computer gaming</option>
+                                                                    <option>Console gaming</option>
+                                                                    <option>Gaming news and general info</option>
+                                                                    <option>Mobile gaming</option>
+                                                                    <option>Online gaming</option>
+                                                                    <option>Roleplaying games</option>
+                                                                </optgroup>
+                                                                <optgroup label="Health">
+                                                                    <option>Health news and general info</option>
+                                                                </optgroup>
+                                                                <optgroup label="Hobbies and Interests">
+                                                                    <option>Astrology</option>
+                                                                    <option>Birdwatching</option>
+                                                                    <option>Boating</option>
+                                                                    <option>Cartoons</option>
+                                                                    <option>Celebrity fan and gossip</option>
+                                                                    <option>Chess</option>
+                                                                    <option>Cigars</option>
+                                                                    <option>Comedy</option>
+                                                                    <option>Dance</option>
+                                                                    <option>Design</option>
+                                                                    <option>Drawing and sketching</option>
+                                                                    <option>Exercise and fitness</option>
+                                                                    <option>Freelance writing</option>
+                                                                    <option>Gambling</option>
+                                                                    <option>Genealogy</option>
+                                                                    <option>Modeling</option>
+                                                                    <option>Needlework</option>
+                                                                    <option>Painting</option>
+                                                                    <option>Paranormal phenomena</option>
+                                                                    <option>Performance arts</option>
+                                                                    <option>Sci-fi and fantasy</option>
+                                                                    <option>Scrapbooking</option>
+                                                                    <option>Screenwriting</option>
+                                                                    <option>Shopping</option>
+                                                                    <option>Stamps and coins</option>
+                                                                </optgroup>
+                                                                <optgroup label="Home and Garden">
+                                                                    <option>Appliances</option>
+                                                                    <option>Entertaining at home</option>
+                                                                    <option>Gardening</option>
+                                                                    <option>General info</option>
+                                                                    <option>Home repair</option>
+                                                                    <option>Interior decorating</option>
+                                                                    <option>Landscaping</option>
+                                                                    <option>Remodeling and construction</option>
+                                                                </optgroup>
+                                                                <optgroup label="Law, Government, and Politics">
+                                                                    <option>Commentary</option>
+                                                                    <option>Conservative</option>
+                                                                    <option>Government resources</option>
+                                                                    <option>Legal issues</option>
+                                                                    <option>Liberal</option>
+                                                                    <option>Nonpartisan</option>
+                                                                    <option>Politics</option>
+                                                                </optgroup>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -198,8 +371,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
     <script src="js/dashboard.js"></script>
+    <script type="text/javascript">
+       $('.select2').select2();
+    </script>
 </body>
 
 </html>

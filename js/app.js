@@ -18,6 +18,24 @@ $(function () {
               $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/4PhHsiGf8cI" frameborder="0" allowfullscreen></iframe>');
             });
 
+            $('#campaign1').on('click', function(e){
+              e.preventDefault();
+              $('#video-overlay').addClass('open');
+              $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/Q6xEv-YpvYw" frameborder="0" allowfullscreen></iframe>');
+            });
+
+            $('#campaign2').on('click', function(e){
+              e.preventDefault();
+              $('#video-overlay').addClass('open');
+              $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/OWsgaDVUWfY" frameborder="0" allowfullscreen></iframe>');
+            });
+
+            $('#campaign3').on('click', function(e){
+              e.preventDefault();
+              $('#video-overlay').addClass('open');
+              $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/IEFAPJtidgQ" frameborder="0" allowfullscreen></iframe>');
+            });
+
             $('.video-overlay, .video-overlay-close').on('click', function(e){
               e.preventDefault();
               close_video();
@@ -112,6 +130,30 @@ $(function () {
               }
             }
           });
+
+
+          var btop = '#back-to-top';
+          if ($(btop).length) {
+              var scrollTrigger = 100, // px
+                  backToTop = function () {
+                      var scrollTop = $(window).scrollTop();
+                      if (scrollTop > scrollTrigger) {
+                          $(btop).addClass('show');
+                      } else {
+                          $(btop).removeClass('show');
+                      }
+                  };
+              backToTop();
+              $(window).on('scroll', function () {
+                  backToTop();
+              });
+              $(btop).on('click', function (e) {
+                  e.preventDefault();
+                  $('html,body').animate({
+                      scrollTop: 0
+                  }, 700);
+              });
+          }
 
         },
 

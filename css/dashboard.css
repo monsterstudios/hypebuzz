@@ -152,6 +152,10 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+body {
+    overflow-x: hidden; 
+}
+
 h1,
 h2,
 h3,
@@ -908,6 +912,10 @@ h1 {
 
 .invoices .col-lg-3 p{
     font-size: 14px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #ff015b;
 }
 
 .footer {

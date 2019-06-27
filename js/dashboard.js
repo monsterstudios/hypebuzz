@@ -18,7 +18,7 @@ $(function() {
                         $(this).closest('.form-edit').find('input').removeClass('form-control-plaintext').addClass('form-control');
                         $(this).closest('.form-edit').find('textarea').removeClass('form-control-plaintext').addClass('form-control');
                         $(this).closest('.form-edit').find('.field-icon').show();
-                        $(this).closest('.form-edit').find('.bootstrap-tagsinput input').show();
+                        $(this).closest('.form-edit').find('.select2').removeAttr('disabled');
                     })
                 });
 
