@@ -14,7 +14,9 @@ $(function() {
                 $('.editor').click(function() {
                     $(this).each(function(n) {
                         $(this).closest('.form-edit').find('input').removeAttr('readonly');
+                        $(this).closest('.form-edit').find('textarea').removeAttr('readonly');
                         $(this).closest('.form-edit').find('input').removeClass('form-control-plaintext').addClass('form-control');
+                        $(this).closest('.form-edit').find('textarea').removeClass('form-control-plaintext').addClass('form-control');
                         $(this).closest('.form-edit').find('.field-icon').show();
                         $(this).closest('.form-edit').find('.bootstrap-tagsinput input').show();
                     })
