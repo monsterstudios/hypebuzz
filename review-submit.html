@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
-    <title>Hypebuzz - Campaigns</title>
+    <title>Hypebuzz - Review & Submit</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
                     <i class="fas fa-volume-off"></i> Campaigns</a>
                 </a>
                 <ul class="collapse in" id="sub_campaign" aria-expanded="true" style="">
-                    <li class="active"><a href="all-campaigns.html"><i class="fas fa-angle-right"></i> All Campaigns</a></li>
+                    <li><a href="all-campaigns.html"><i class="fas fa-angle-right"></i> All Campaigns</a></li>
                     <li><a href="#"><i class="fas fa-angle-right"></i> Live</a></li>
                     <li><a href="#"><i class="fas fa-angle-right"></i> Completed</a></li>
                     <li><a href="#"><i class="fas fa-angle-right"></i> Cancelled</a></li>
@@ -104,7 +104,7 @@
                                 Hi Maraji
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Campaigns</a>
+                                <a class="dropdown-item" href="#">View Sponsorship</a>
                                 <a class="dropdown-item" href="#">Logout</a>
                             </div>
                         </div>
@@ -117,20 +117,66 @@
             <div class="inner-wrapper">
                 <div class="inner-sidebar">
                     <ul>
-                        <li class="active"><a href="#">All Campaigns</a></li>
-                        <li><a href="#">Live</a></li>
-                        <li><a href="#">Completed</a></li>
-                        <li><a href="#">Cancelled</a></li>
+                        <li><a href="social-selection.html">Social Selection</a></li>
+                        <li><a href="product-service.html">Product/Services</a></li>
+                        <li><a href="#">Campaign Details</a></li>
+                        <li><a href="#">Audience & Budget</a></li>
+                        <li class="active"><a href="review-submit.html">Review & Submit</a></li>
                     </ul>
                 </div>
                 <div class="sub-content">
                     <div class="container">
-                        <div class="row mt-5">
+                        <div class="row">
                             <div class="col-lg-12">
-                                <div class="text-center my-5 py-5">
-                                    <h3 class="mb-4">No Campaigns</h3>
-                                    <p>You don't have any campaigns yet.<br>You can create a new campaign by clicking the button below</p>
-                                    <a href="social-selection.html" class="btn btn-primary btn-rounded btn-icon btn-lg my-3">Create Campaign <i class="fas fa-chevron-right"></i></a>
+                                <div class="py-5">
+                                    <h3 class="mb-4">Review & Submit</h3>
+                                    <p>Please review your campaign and when you are satisfied, submit it for approval. Please note, campaign approval takes 1 - 2 business days</p>
+                                    <div class="row py-4">
+                                        <div class="col-lg-4">
+                                            <img src="//placehold.it/300x300" class="img-fluid rounded">
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <h5>Budget</h5>
+                                            <div class="form-group row">
+                                                <label class="col-sm-5 col-form-label">Budget Per Content</label>
+                                                <div class="col-sm-7">
+                                                    <select disabled class="form-control">
+                                                        <option selected="">Up to $5,000</option>
+                                                        <option>5K - Over 1M</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-5 col-form-label">Est. Creator Size</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" readonly class="form-control" value="300 x 300px"></input>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-5 col-form-label">Reach</label>
+                                                <div class="col-sm-7">
+                                                    <select disabled class="form-control">
+                                                        <option>5K - 10K</option>
+                                                        <option>11K - 20K</option>
+                                                        <option>21K - 30K</option>
+                                                        <option selected="">31K - 40K</option>
+                                                        <option>41K - 100K</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <h5 class="py-4">About The Brand</h5>
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <textarea rows="5" readonly class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row pt-3">
+                                                <div class="col-sm-7 offset-5">
+                                                    <button type="submit" class="btn btn-primary btn-md btn-rounded btn-icon btn-block">Submit <i class="fas fa-chevron-right"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
