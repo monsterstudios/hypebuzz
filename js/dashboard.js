@@ -19,6 +19,9 @@ $(function() {
                         $(this).closest('.form-edit').find('textarea').removeClass('form-control-plaintext').addClass('form-control');
                         $(this).closest('.form-edit').find('.field-icon').show();
                         $(this).closest('.form-edit').find('.select2').removeAttr('disabled');
+                        $(this).closest('.form-edit').find('.selectpicker').removeAttr('disabled');
+                        $(this).closest('.form-edit').find('.bootstrap-select').removeClass('disabled');
+                        $(this).closest('.form-edit').find('.bootstrap-select button').removeClass('disabled');
                     })
                 });
 
