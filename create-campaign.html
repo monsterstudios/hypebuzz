@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <title>Hypebuzz - Create Campaign</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput-typeahead.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css" />
+    <link rel="stylesheet" href="css/smart_wizard_theme_dots.min.css"/>
+    <link rel="stylesheet" href="css/smart_wizard.min.css"/>
+    <link href="css/dashboard.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="sidebar-wrapper" class="sidebar-toggle">
+        <ul class="sidebar-nav">
+            <li class="sidebar-logo">
+                <a href="index.html"><img src="img/HB-White@4x.png" class="img-responsive"></a>
+            </li>
+            <li>
+                <div class="earnings"><i class="fas fa-coins"></i> Account Balance: <span>N1.5M</span></div>
+            </li>
+            <li class="dropdown">
+                <a href="brands-dashboard.html" class="dropdown-toggle" data-toggle="collapse" data-target="#sub_dashboard" role="button" aria-expanded="true">
+                    <i class="fas fa-user-circle"></i>Dashboard
+                </a>
+                <ul class="collapse in" id="sub_dashboard" aria-expanded="true" style="">
+                    <li><a href="brands-dashboard.html"><i class="fas fa-angle-right"></i> Profile Settings</a></li>
+                    <li><a href="campaign-history.html"><i class="fas fa-angle-right"></i> Campaign History</a></li>
+                </ul>
+            </li>
+            <li class="active dropdown">
+                <a href="all-campaigns.html" class="dropdown-toggle" data-toggle="collapse" data-target="#sub_campaign" role="button" aria-expanded="true">
+                    <i class="fas fa-volume-off"></i> Campaigns</a>
+                </a>
+                <ul class="collapse in" id="sub_campaign" aria-expanded="true" style="">
+                    <li><a href="all-campaigns.html"><i class="fas fa-angle-right"></i> All Campaigns</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Live</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Completed</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Cancelled</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="messages-brands.html" class="dropdown-toggle" data-toggle="collapse" data-target="#sub_messages" role="button" aria-expanded="true">
+                    <i class="fas fa-envelope"></i> Messages
+                </a>
+                <ul class="collapse in" id="sub_messages" aria-expanded="true" style="">
+                    <li><a href="messages-brands.html"><i class="fas fa-angle-right"></i> Read</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Unread</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="invoices.html" class="dropdown-toggle" data-toggle="collapse" data-target="#sub_invoices" role="button" aria-expanded="true">
+                    <i class="fas fa-coins"></i> Payments
+                </a>
+                <ul class="collapse in" id="sub_invoices" aria-expanded="true" style="">
+                    <li><a href="invoices.html"><i class="fas fa-angle-right"></i> Invoices</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> History</a></li>
+                    <li><a href="load-funds.html"><i class="fas fa-angle-right"></i> Load Funds</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="proposals.html"><i class="fas fa-file-alt"></i> Proposals</a>
+            </li>
+        </ul>
+        <div class="sidebar-copyright">
+            <p>© HypeBuzz Technologies Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <nav class="navbar navbar-light" role="navigation">
+            <div class="container-fluid">
+                <div class="col-lg-3 col-sm-3 d-lg-block d-none">
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary btn-md btn-rounded btn-icon">Create campaign <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 d-lg-block d-none">
+                    <div class="earnings-container text-center">
+                        <div class="earnings"><i class="fas fa-coins"></i> Account Balance: <span>N200k</span></div>
+                        <a href="#" class="btn btn-success btn-md btn-rounded btn-icon">Add Credit <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-12">
+                    <div class="profile-container navbar-expand-lg">
+                        <button class="navbar-toggler">
+                            <span class="burger-menu">
+                                <span class="burger"></span>
+                            </span>
+                        </button>
+                        <a href="#"><i class="fas fa-envelope"></i><sup></sup></a>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hi Maraji
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">View Sponsorship</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                        <img src="img/profile-img.png" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content-wrapper">
+            <div class="inner-wrapper">
+                <div class="sub-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form id="campaign-form">
+                                    <div id="smartwizard" class="py-5">
+                                        <ul>
+                                            <li><a href="#step-1">Social Selection</a></li>
+                                            <li><a href="#step-2">Product/Services</a></li>
+                                            <li><a href="#step-3">Campaign Details</a></li>
+                                            <li><a href="#step-4">Audience/Budget</a></li>
+                                            <li><a href="#step-5">Review & submit</a></li>
+                                        </ul>
+                                     
+                                        <div>
+                                            <div id="step-1" class="">
+                                                <p class="pt-5 pb-3">Select the key platforms you’d like influencers to promote on</p>
+                                                <div class="social-list my-4">
+                                                    <div class="d-inline">
+                                                        <input required="" type='checkbox' name='instagram' value='' id="instagram" />
+                                                        <label for="instagram" class="input-ig"></label>
+                                                    </div>
+                                                    <div class="d-inline mx-3">
+                                                        <input required="" type='checkbox' name='youtube' value='' id="youtube"/>
+                                                        <label for="youtube" class="input-yt"></label>
+                                                    </div>
+                                                    <div class="d-inline mr-3">
+                                                        <input required="" type='checkbox' name='twitter' value='' id="twitter" checked="" />
+                                                        <label for="twitter" class="input-tw"></label>
+                                                    </div>
+                                                    <div class="d-inline mr-3">
+                                                        <input required="" type='checkbox' name='facebook' value='' id="facebook" />
+                                                        <label for="facebook" class="input-fb"></label>
+                                                    </div>
+                                                    <div class="d-inline mr-3">
+                                                        <input required="" type='checkbox' name='snapchat' value='' id="snapchat" />
+                                                        <label for="snapchat" class="input-sc"></label>
+                                                    </div>
+                                                    <div class="d-inline">
+                                                        <input required="" type='checkbox' name='tiktok' value='' id="tiktok" />
+                                                        <label for="tiktok" class="input-tt"></label>
+                                                    </div>
+                                                </div>
+                                                <p>You can select more than one</p>
+                                                <div class="form-group row my-4">
+                                                    <div class="col-sm-8">
+                                                        <select required="" class="form-control" multiple="multiple">
+                                                            <option>Video</option>
+                                                            <option>Comedic Sketch</option>
+                                                            <option>Photograph</option>
+                                                            <option>Music</option>
+                                                            <option>Product / service review</option>
+                                                            <option>Blog Post</option>
+                                                            <option>Tweets & Retweet</option>
+                                                            <option>Tutorial</option>
+                                                            <option>Stories [instagram]</option>
+                                                        </select>
+                                                        <label class="col-form-label mt-3">Select the content type(s) you'd like creators to make</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="step-2" class="">
+                                                <p class="py-5">Tell us a bit about the product or service you are looking to promote</p>
+                                                <div class="form-container">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Product Category</label>
+                                                        <div class="col-sm-8">
+                                                            <select required="" class="form-control">
+                                                                <option>Automotive</option>
+                                                                <option>Beauty</option>
+                                                                <option>Books and Literature</option>
+                                                                <option>Business</option>
+                                                                <option>Careers</option>
+                                                                <option>Education</option>
+                                                                <option>Events</option>
+                                                                <option>Family and Parenting</option>
+                                                                <option>Food and Drink</option>
+                                                                <option>Gaming</option>
+                                                                <option>Health</option>
+                                                                <option>Hobbies and Interests</option>
+                                                                <option>Home and Garden</option>
+                                                                <option>Law, Government, and Politics</option>
+                                                                <option>Life Stages</option>
+                                                                <option>Movies and Television</option>
+                                                                <option>Music and Radio</option>
+                                                                <option>Personal Finance</option>
+                                                                <option>Pets</option>
+                                                                <option>Science</option>
+                                                                <option>Society</option>
+                                                                <option>Sports</option>
+                                                                <option>Style and Fashion</option>
+                                                                <option>Technology and Computing</option>
+                                                                <option>Travel</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Product URL</label>
+                                                        <div class="col-sm-8">
+                                                            <input required="" type="text" class="form-control" value="http://websiteurl.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Upload Product</label>
+                                                        <div class="col-lg-4 col-sm-12 col-12">
+                                                            <img src="//placehold.it/300x300" class="img-fluid d-block mx-auto rounded avatar">
+                                                            <a href="javascript:void(0);" id="btn-upload" class="btn btn-primary btn-md btn-rounded btn-icon my-4">Browse<i class="fas fa-chevron-right"></i></a>
+                                                            <input type="file" class="text-center center-block file-upload d-none">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="form-check col-sm-8 offset-4">
+                                                          <input required="" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                          <label class="form-check-label" for="defaultCheck1">
+                                                            Physical product [Brands will need to deliver the products to the influencer]
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Product Description</label>
+                                                        <div class="col-sm-8">
+                                                            <textarea required="" rows="5" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>   
+                                                </div>  
+                                            </div>
+                                            <div id="step-3" class="">
+                                                <p class="py-5">We need more information to help you get started</p>
+                                                <div class="form-container">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Campaign Title</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Messaging Points To Include</label>
+                                                        <div class="col-sm-8">
+                                                            <textarea rows="5" class="form-control" placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Messaging Points To Exclude</label>
+                                                        <div class="col-sm-8">
+                                                            <textarea rows="5" class="form-control" placeholder="{e.g no swear words, mention of competitors etc)"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Call To Action</label>
+                                                        <div class="col-sm-8">
+                                                            <textarea rows="5" class="form-control" placeholder="What would you like the influencer to encourage their fans to do"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Specific due date for content</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" data-provide="datepicker" class="form-control" value="" placeholder="Select a date at least 9 days before you want the post to go live">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row pb-4">
+                                                        <label class="col-sm-4 col-form-label">Duration</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" data-provide="datepicker" class="form-control" value="" placeholder="This is how long your campaign will remain on the platform">
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            <div id="step-4" class="">
+                                                <p class="py-5">You need to specify your target and budget</p>
+                                                <div class="form-container">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Audience</label>
+                                                        <div class="col-sm-8">
+                                                            <select class="form-control">
+                                                                <option>Male</option>
+                                                                <option>Female</option>
+                                                                <option>Both</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Age Group</label>
+                                                        <div class="col-sm-8">
+                                                            <select class="form-control" multiple="multiple">
+                                                                <option>16 - 24</option>
+                                                                <option>25 - 34</option>
+                                                                <option>35 - 44</option>
+                                                                <option>45 - 54</option>
+                                                                <option>55 - 64</option>
+                                                                <option>65 - Above</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Budget</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="input-group">
+                                                              <div class="input-group-prepend">
+                                                                <span class="input-group-text">&#8358;</span>
+                                                              </div>
+                                                              <input type="text" class="form-control" placeholder="How much are you willing to pay per influencer / per piece of content">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4 col-form-label">Invite</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control" placeholder="Enter influencer handle to send an invite">
+                                                        </div>
+                                                    </div>                                    
+                                                </div> 
+                                            </div>
+                                            <div id="step-5" class="">
+                                                <p class="py-5">Please review your campaign and when you are satisfied, submit it for approval. Please note, campaign approval takes 1 - 2 business days</p>
+                                                <div class="row py-4">
+                                                    <div class="col-lg-4">
+                                                        <img src="//placehold.it/300x300" class="img-fluid rounded">
+                                                    </div>
+                                                    <div class="col-lg-7">
+                                                        <h5>Budget</h5>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-5 col-form-label">Budget Per Content</label>
+                                                            <div class="col-sm-7">
+                                                                <select disabled class="form-control">
+                                                                    <option selected="">Up to $5,000</option>
+                                                                    <option>5K - Over 1M</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-5 col-form-label">Est. Creator Size</label>
+                                                            <div class="col-sm-7">
+                                                                <input type="text" readonly class="form-control" value="300 x 300px"></input>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-5 col-form-label">Reach</label>
+                                                            <div class="col-sm-7">
+                                                                <select disabled class="form-control">
+                                                                    <option>5K - 10K</option>
+                                                                    <option>11K - 20K</option>
+                                                                    <option>21K - 30K</option>
+                                                                    <option selected="">31K - 40K</option>
+                                                                    <option>41K - 100K</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="py-4">About The Brand</h5>
+                                                        <div class="form-group row">
+                                                            <div class="col-sm-12">
+                                                                <textarea rows="5" readonly class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+    <script src="js/jquery.smartWizard.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script>
+        $('select[multiple="multiple"]').multiselect({
+            buttonClass: 'btn btn-light btn-block text-left'
+        });
+
+        // Toolbar extra buttons
+        var btnSubmit = $('<button></button>').text('Submit')
+            .addClass('btn btn-primary')
+            .on('click', function() {
+                if (!$(this).hasClass('disabled')) {
+                    var elmForm = $("#campaign-form");
+                    if (elmForm) {
+                        elmForm.validator('validate');
+                        var elmErr = elmForm.find('.has-error');
+                        if (elmErr && elmErr.length > 0) {
+                            alert('Oops we still have error in the form');
+                            return false;
+                        } else {
+                            alert('Great! we are ready to submit form');
+                            elmForm.submit();
+                            return false;
+                        }
+                    }
+                }
+            });
+        var btnDraft = $('<button></button>').text('Save Draft')
+            .addClass('btn btn-light')
+            .on('click', function() {
+                //Make Ajax call to save data as draft
+            });
+
+
+
+        // Smart Wizard
+        $('#smartwizard').smartWizard({
+            selected: 0,
+            theme: 'dots',
+            transitionEffect: 'fade',
+            toolbarSettings: {
+                toolbarPosition: 'bottom',
+                toolbarExtraButtons: [btnSubmit, btnDraft]
+            },
+            anchorSettings: {
+                markDoneStep: true, // add done css
+                markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+                removeDoneStepOnNavigateBack: true, // While navigate back done step after active step will be cleared
+                enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+            }
+        });
+
+        $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
+            var elmForm = $("#form-step-" + stepNumber);
+            // stepDirection === 'forward' :- this condition allows to do the form validation
+            // only on forward navigation, that makes easy navigation on backwards still do the validation when going next
+            if (stepDirection === 'forward' && elmForm) {
+                elmForm.validator('validate');
+                var elmErr = elmForm.children('.has-error');
+                if (elmErr && elmErr.length > 0) {
+                    // Form validation failed
+                    return false;
+                }
+            }
+            return true;
+        });
+
+        $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+            // Enable finish button only on last step
+            if (stepNumber == 3) {
+                $('.btn-finish').removeClass('disabled');
+            } else {
+                $('.btn-finish').addClass('disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>
