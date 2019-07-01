@@ -146,6 +146,14 @@
         margin-top: 0!important;
     }
 
+    .sw-toolbar .btn-group{
+        margin: 10px 0;
+    }
+
+    .sw-main .sw-toolbar .sw-btn-group-extra {
+        float: none!important;
+    }
+
 }
 
 
@@ -1073,6 +1081,19 @@ h1 {
 
 .sw-theme-dots>ul.step-anchor:before{
     top: 70%;
+}
+
+.help-block.with-errors {
+    color: #ff015b;
+}
+
+.sw-main .sw-toolbar {
+    justify-content: normal!important;
+    display: contents;
+}
+
+.sw-main .sw-toolbar .sw-btn-group-extra {
+    float: right;
 }
 
 .footer {
