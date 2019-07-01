@@ -929,6 +929,30 @@ h1 {
     content: "\f16d";
 }
 
+.social-list #instagram[type=checkbox]:checked+label{
+    background: #D32477;
+}
+
+.social-list #youtube[type=checkbox]:checked+label{
+    background: #FF0000;
+}
+
+.social-list #twitter[type=checkbox]:checked+label{
+    background: #1DA1F2;
+}
+
+.social-list #facebook[type=checkbox]:checked+label{
+    background: #3A559F;
+}
+
+.social-list #snapchat[type=checkbox]:checked+label{
+    background: #FFFC00;
+}
+
+.social-list #tiktok[type=checkbox]:checked+label{
+    background: #FF004F;
+}
+
 .social-list .input-yt::before {
     content: "\f167";
 }
@@ -940,6 +964,19 @@ h1 {
 .social-list .input-fb::before {
     content: "\f39e";
 }
+
+.social-list .input-sc::before {
+    content: "\f2ac";
+}
+
+.social-list .input-tt::before {
+    content: "";
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMzg0IDM4NCIgd2lkdGg9IjUxMiIgY2xhc3M9IiI+PGc+PHBhdGggZD0ibTI0MCA4MHYtMTZoLTMydjE3NmMwIDI2LjQ3MjY1Ni0yMS41MjczNDQgNDgtNDggNDhzLTQ4LTIxLjUyNzM0NC00OC00OCAyMS41MjczNDQtNDggNDgtNDhoMTZ2LTMyaC0xNmMtNDQuMTEzMjgxIDAtODAgMzUuODg2NzE5LTgwIDgwczM1Ljg4NjcxOSA4MCA4MCA4MCA4MC0zNS44ODY3MTkgODAtODB2LTk2LjE1MjM0NGMxMy4zOTA2MjUgMTAuMDg5ODQ0IDI5Ljk3NjU2MiAxNi4xNTIzNDQgNDggMTYuMTUyMzQ0aDE2di0zMmgtMTZjLTI2LjQ3MjY1NiAwLTQ4LTIxLjUyNzM0NC00OC00OHptMCAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+PHBhdGggZD0ibTAgMzg0aDM4NHYtMzg0aC0zODR6bTMyLTM1MmgzMjB2MzIwaC0zMjB6bTAgMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wYXRoPjwvZz4gPC9zdmc+);
+    background-size: 20px;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+}
+
 
 .social-list input[type=checkbox]+label::before {
     font-family: "Font Awesome 5 Brands";
@@ -964,7 +1001,6 @@ h1 {
 .social-list input[type=checkbox]:checked+label {
     height: 50px;
     width: 50px;
-    background: #ff015b;
     display: inline-block;
     padding: 0;
     cursor: pointer;
