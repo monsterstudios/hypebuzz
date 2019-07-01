@@ -998,6 +998,10 @@ h1 {
     margin: 0;
 }
 
+.social-list label {
+    margin: 10px 0!important;
+}
+
 .social-list input[type=checkbox]:checked+label {
     height: 50px;
     width: 50px;
