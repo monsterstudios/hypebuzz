@@ -199,7 +199,12 @@ h1 {
 .btn-primary:hover,
 .btn-primary:focus {
     background: #ef2d72 !important;
-    color: #fff;
+    color: #fff!important;
+}
+
+.btn-success:hover,
+.btn-success:focus{
+    color: #fff!important;
 }
 
 .form-control:focus {
