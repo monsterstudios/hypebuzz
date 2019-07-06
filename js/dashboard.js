@@ -35,6 +35,11 @@ $(function() {
                     }
                 });
 
+                $("[data-type=replyMsg]").click(function(){
+                    $('#msgModal').modal('hide');
+                });
+
+
                 var readURL = function(input) {
                     if (input.files && input.files[0]) {
                         var reader = new FileReader();

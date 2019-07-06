@@ -300,7 +300,10 @@
                                                     <div class="form-group row pb-4">
                                                         <label class="col-sm-4 col-form-label">Duration</label>
                                                         <div class="col-sm-8">
-                                                            <input required="" type="text" data-provide="datepicker" class="form-control" value="" placeholder="This is how long your campaign will remain on the platform">
+                                                            <div class="input-group input-daterange">
+                                                                <input type="text" data-provide="datepicker" required class="form-control" value="From">
+                                                                <input type="text" data-provide="datepicker" required class="form-control" value="To">
+                                                            </div>
                                                             <div class="help-block with-errors"></div>
                                                         </div>
                                                     </div>
