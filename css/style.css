@@ -92,6 +92,7 @@ header {
 .navbar-page.bg-dark {
     background: #ff015b!important;
     padding: 15px 20px;
+    z-index: 9999;
 }
 
 .navbar-brand img {
