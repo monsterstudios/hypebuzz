@@ -694,6 +694,15 @@ header {
     transition: 0.3s;
 }
 
+.footer p{
+    font-size: 15px;
+}
+
+.footer p,
+.footer a{
+    color: #F7F7FC;
+}
+
 .footer ul {
     padding: 0;
 }
