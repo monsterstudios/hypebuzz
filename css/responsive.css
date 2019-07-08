@@ -182,6 +182,14 @@
         padding: 5px 0 !important;
     }
 
+    .about-page .block-content{
+        padding: 4em 0!important;
+    }
+
+    #grid-container {
+        margin-top: 0!important;
+    }
+
 }
 
 @media (min-width: 1200px) {
