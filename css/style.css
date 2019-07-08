@@ -89,6 +89,11 @@ header {
     transition: .5s;
 }
 
+.navbar-page.bg-dark {
+    background: #ff015b!important;
+    padding: 15px 20px;
+}
+
 .navbar-brand img {
     width: 80px;
     margin: 7px 30px 10px 5px;
