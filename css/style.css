@@ -24,7 +24,7 @@ body {
 }
 
 body {
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 h1,
@@ -40,11 +40,11 @@ h1 {
     font-size: 65px;
 }
 
-.btn{
+.btn {
     font-family: 'CircularStd';
 }
 
-.btn-group .dropdown-item{
+.btn-group .dropdown-item {
     font-size: 14px;
 }
 
@@ -90,7 +90,7 @@ header {
 }
 
 .navbar-page.bg-dark {
-    background: #ff015b!important;
+    background: #ff015b !important;
     padding: 15px 20px;
     z-index: 9999;
 }
@@ -694,12 +694,12 @@ header {
     transition: 0.3s;
 }
 
-.footer p{
-    font-size: 15px;
+.footer p {
+    font-size: 1px;
 }
 
 .footer p,
-.footer a{
+.footer a {
     color: #F7F7FC;
 }
 
@@ -747,4 +747,28 @@ hr {
     font-size: 14px;
     margin: 0;
     padding: 15px 0;
+}
+
+.about-page .block-content {
+    color: #fff;
+    padding: 10em 0;
+    font-size: 18px;
+}
+
+.grid {
+  margin-bottom: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+
+.grid-image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+#grid-container {
+    margin-top: 6em;
 }
