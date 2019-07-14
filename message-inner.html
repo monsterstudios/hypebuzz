@@ -8,12 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
-    <title>Hypebuzz - Submit Proposal</title>
+    <title>Hypebuzz - Messages</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput-typeahead.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
     <link href="css/dashboard.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,13 +39,13 @@
                     <li><a href="social-account.html"><i class="fas fa-angle-right"></i> Social Accounts</a></li>
                 </ul>
             </li>
-            <li class="active">
+            <li>
                 <a href="sponsorships.html"><i class="fas fa-volume-off"></i> Sponsorships</a>
             </li>
             <li>
                 <a href="myprojects.html"><i class="fas fa-cog"></i> My Projects</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="#"><i class="fas fa-envelope"></i> Messages</a>
             </li>
             <li class="">
@@ -110,73 +109,34 @@
         </nav>
         <div class="content-wrapper">
             <div class="inner-wrapper">
+                <div class="inner-sidebar">
+                    <ul>
+                        <li class="active"><a href="wallet.html">Read</a></li>
+                        <li><a href="#">Unread</a></li>
+                    </ul>
+                </div>
                 <div class="sub-content">
                     <div class="container">
                         <div class="row mt-5">
                             <div class="col-lg-12">
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 col-12">
-                                        <h4>Submit Proposal: Google - Launch of the new Google Pixel</h4>
-                                        <p>What are your ideas and how will you promote this brand? Please be as detailed as possible</p>
-                                        <form class="py-4">
+                                        <h4>From: Username</h4>
+                                        <form class="pt-3">
                                             <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Select Platform</label>
-                                                <div class="social-list mb-5 col-sm-7">
-                                                    <p class="pb-3">Select the key platforms you’d like influencers to promote on (You can select more than one )</p>
-                                                    <div class="d-inline">
-                                                        <input required="" type='checkbox' name='instagram' value='' id="instagram" />
-                                                        <label for="instagram" class="input-ig"></label>
-                                                    </div>
-                                                    <div class="d-inline mx-3">
-                                                        <input required="" type='checkbox' name='youtube' value='' id="youtube"/>
-                                                        <label for="youtube" class="input-yt"></label>
-                                                    </div>
-                                                    <div class="d-inline mr-3">
-                                                        <input required="" type='checkbox' name='twitter' value='' id="twitter" checked="" />
-                                                        <label for="twitter" class="input-tw"></label>
-                                                    </div>
-                                                    <div class="d-inline mr-3">
-                                                        <input required="" type='checkbox' name='facebook' value='' id="facebook" />
-                                                        <label for="facebook" class="input-fb"></label>
-                                                    </div>
-                                                    <div class="d-inline mr-3">
-                                                        <input required="" type='checkbox' name='snapchat' value='' id="snapchat" />
-                                                        <label for="snapchat" class="input-sc"></label>
-                                                    </div>
-                                                    <div class="d-inline">
-                                                        <input required="" type='checkbox' name='tiktok' value='' id="tiktok" />
-                                                        <label for="tiktok" class="input-tt"></label>
-                                                    </div>
-                                                    <div class="help-block with-errors"></div>
+                                                <label class="col-sm-3 col-form-label">Email</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control-plaintext" value="admin@hypebuzz.com">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Bid Amount</label>
-                                                <div class="input-group col-sm-7">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">&#8358;</span>
-                                                    </div>
-                                                    <input required="" type="text" class="form-control" placeholder="Enter your bid amount here">
+                                                <label class="col-sm-3 col-form-label">Message</label>
+                                                <div class="col-sm-9">
+                                                    <textarea  rows="5" class="form-control-plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Completion Date</label>
-                                                <div class="col-sm-7">
-                                                    <input required="" type="text" data-provide="datepicker" class="form-control" value="" placeholder="This campaign will be completed on?">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Describe your proposal</label>
-                                                <div class="col-sm-7">
-                                                    <textarea required="" class="form-control" rows="7" placeholder="What makes you idea for this campaign?"></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col-lg-7 offset-3">
-                                                    <button type="submit" class="btn btn-primary btn-md btn-rounded btn-block btn-icon mr-5">Submit Proposal <i class="fas fa-chevron-right"></i></button>
-                                                </div>
+                                            <div class="text-right form-group">
+                                                <a href="#" class="btn btn-primary btn-md btn-rounded btn-icon">Reply<i class="fas fa-chevron-right"></i></a>
                                             </div>
                                         </form>
                                     </div>
@@ -192,7 +152,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="js/dashboard.js"></script>
 </body>
 
