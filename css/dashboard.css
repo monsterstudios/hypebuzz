@@ -1352,6 +1352,23 @@ h1 {
     display: none;
 }
 
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.filter-tab h3 {
+    float: left;
+}
+
+.filter-tab .dropdown {
+    float: right;
+}
+
+.filter-tab {
+    display: table;
+    width: 100%;
+}
+
 .footer {
     background: #000000;
     -webkit-box-shadow: 0 2px 4px 0 rgba(20, 20, 40, 0.10);
