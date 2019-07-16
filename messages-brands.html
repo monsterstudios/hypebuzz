@@ -115,116 +115,191 @@
         </nav>
         <div class="content-wrapper">
             <div class="inner-wrapper">
-                <div class="inner-sidebar">
-                    <ul>
-                        <li class="active"><a href="wallet.html">Read</a></li>
-                        <li><a href="#">Unread</a></li>
-                    </ul>
-                </div>
-                <div class="sub-content">
+                <div class="sub-content p-0">
                     <div class="container">
-                        <div class="row mt-5">
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-12 col-sm-12 col-12">
-                                        <h4>Read</h4>
-                                        <div class="modal fade" id="msgModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                          <div class="modal-lg modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                <h5 class="modal-title"">Admin</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                  <span aria-hidden="true">&times;</span>
-                                                </button>
-                                              </div>
-                                              <div class="modal-body">
-                                                <form>
-                                                    <div class="form-group row">
-                                                        <label class="col-sm-3 col-form-label">Email</label>
-                                                        <div class="col-sm-9">
-                                                            <input type="text" class="form-control-plaintext" value="admin@hypebuzz.com">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-sm-3 col-form-label">Message</label>
-                                                        <div class="col-sm-9">
-                                                            <textarea  rows="5" class="form-control-plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                              </div>
-                                              <div class="modal-footer">
-                                                <button type="submit" class="btn btn-primary">Delete</button>
-                                                <button data-type="replyMsg" data-toggle="modal" data-target="#replyModal" class="btn btn-light">Reply</button>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="modal fade" id="replyModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                          <div class="modal-lg modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                <h5 class="modal-title"">Reply</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                  <span aria-hidden="true">&times;</span>
-                                                </button>
-                                              </div>
-                                              <div class="modal-body">
-                                                <form>
-                                                    <div class="form-group row">
-                                                        <label class="col-sm-3 col-form-label">Your Email</label>
-                                                        <div class="col-sm-9">
-                                                            <input required="" type="email" class="form-control" placeholder="Enter your email">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-sm-3 col-form-label">Message</label>
-                                                        <div class="col-sm-9">
-                                                            <textarea  rows="5" class="form-control" placeholder="Your response goes here"></textarea>
-                                                        </div>  
-                                                    </div>              
-                                                </form>
-                                              </div>
-                                              <div class="modal-footer">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <form>
-                                            <div class="table-responsive mt-3">
-                                                <table id="msgtable" class="table table-striped msgtable">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Date</th>
-                                                            <th>Name</th>
-                                                            <th>Email</th>
-                                                            <th>Message</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr data-toggle="modal" data-target="#msgModal">
-                                                            <td>
-                                                                20/4/2019
-                                                            </td>
-                                                            <td>
-                                                                Admin
-                                                            </td>
-                                                            <td>
-                                                                admin@hypebuzz.com
-                                                            </td>
-                                                            <td>
-                                                                <p>Welcome, Thank you for registering on HypeMyHustle. We look forward to...</p>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </form>
-                                    </div>
+                        <div class="row chat-widget">
+                            <div class="people-list" id="people-list">
+                                <div class="search">
+                                    <input type="text" placeholder="Search..." />
+                                    <i class="fa fa-search"></i>
                                 </div>
+                                <ul class="list">
+                                    <li class="clearfix active">
+                                        <a href="javascript:void(0);">
+                                            <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle"/>
+                                            <div class="about">
+                                                <div class="name">Vincent Porter</div>
+                                                <div class="status">
+                                                    <i class="fa fa-circle online"></i> online
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="javascript:void(0);">
+                                            <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle"/>
+                                            <div class="about">
+                                                <div class="name">Aiden Chavez</div>
+                                                <div class="status">
+                                                    <i class="fa fa-circle offline"></i> left 7 mins ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="javascript:void(0);">
+                                            <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle"/>
+                                            <div class="about">
+                                                <div class="name">Mike Thomas</div>
+                                                <div class="status">
+                                                    <i class="fa fa-circle online"></i> online
+                                                </div>
+                                            </div>
+                                        </a>    
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="javascript:void(0);">
+                                            <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle"/>
+                                            <div class="about">
+                                                <div class="name">Erica Hughes</div>
+                                                <div class="status">
+                                                    <i class="fa fa-circle online"></i> online
+                                                </div>
+                                            </div>
+                                        </a>    
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="javascript:void(0);">
+                                            <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle"/>
+                                            <div class="about">
+                                                <div class="name">Ginger Johnston</div>
+                                                <div class="status">
+                                                    <i class="fa fa-circle online"></i> online
+                                                </div>
+                                            </div>
+                                        </a>    
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="javascript:void(0);">
+                                            <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle"/>
+                                            <div class="about">
+                                                <div class="name">Tracy Carpenter</div>
+                                                <div class="status">
+                                                    <i class="fa fa-circle offline"></i> left 30 mins ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="javascript:void(0);">
+                                            <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle"/>
+                                            <div class="about">
+                                                <div class="name">Christian Kelly</div>
+                                                <div class="status">
+                                                    <i class="fa fa-circle offline"></i> left 10 hours ago
+                                                </div>
+                                            </div>
+                                        </a>    
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="javascript:void(0);">
+                                            <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle"/>
+                                            <div class="about">
+                                                <div class="name">Monica Ward</div>
+                                                <div class="status">
+                                                    <i class="fa fa-circle online"></i> online
+                                                </div>
+                                            </div>
+                                        </a>    
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="javascript:void(0);">
+                                            <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle"/>
+                                            <div class="about">
+                                                <div class="name">Dean Henry</div>
+                                                <div class="status">
+                                                    <i class="fa fa-circle offline"></i> offline since Oct 28
+                                                </div>
+                                            </div>
+                                        </a>    
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="javascript:void(0);">
+                                            <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle"/>
+                                            <div class="about">
+                                                <div class="name">Peyton Mckinney</div>
+                                                <div class="status">
+                                                    <i class="fa fa-circle online"></i> online
+                                                </div>
+                                            </div>
+                                        </a>    
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
+                            <div class="chat">
+                                <div class="chat-header clearfix">
+                                    <img src="//placehold.it/55x55" alt="avatar" class="img-fluid rounded-circle" />
+                                    <div class="chat-about">
+                                        <div class="chat-with">Chat with Vincent Porter</div>
+                                        <div class="chat-num-messages">already 1 902 messages</div>
+                                    </div>
+                                    <i class="fa fa-star"></i>
+                                </div> <!-- end chat-header -->
+                                <div class="chat-history">
+                                    <ul>
+                                        <li class="clearfix">
+                                            <div class="message-data text-right">
+                                                <span class="message-data-time">10:10 AM, Today</span> &nbsp; &nbsp;
+                                                <span class="message-data-name">Olia</span> <i class="fa fa-circle me"></i>
+                                            </div>
+                                            <div class="message other-message float-right">
+                                                Hi Vincent, how are you? How is the project coming along?
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="message-data">
+                                                <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+                                                <span class="message-data-time">10:12 AM, Today</span>
+                                            </div>
+                                            <div class="message my-message">
+                                                Are we meeting today? Project has been already finished and I have results to show you.
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="message-data text-right">
+                                                <span class="message-data-time">10:14 AM, Today</span> &nbsp; &nbsp;
+                                                <span class="message-data-name">Olia</span> <i class="fa fa-circle me"></i>
+                                            </div>
+                                            <div class="message other-message float-right">
+                                                Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so? Have you faced any problems at the last phase of the project?
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="message-data">
+                                                <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+                                                <span class="message-data-time">10:20 AM, Today</span>
+                                            </div>
+                                            <div class="message my-message">
+                                                Actually everything was fine. I'm very excited to show this to our team.
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="message-data">
+                                                <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+                                                <span class="message-data-time">10:31 AM, Today</span>
+                                            </div>
+                                            <i class="fa fa-circle online"></i>
+                                            <i class="fa fa-circle online" style="color: #86BB71"></i>
+                                            <i class="fa fa-circle online" style="color: #86BB71"></i>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end chat-history -->
+                                <div class="chat-message clearfix">
+                                    <textarea name="message-to-send" id="message-to-send" placeholder="Type your message" rows="3"></textarea>
+                                    <button>Send</button>
+                                </div> <!-- end chat-message -->
+                            </div>
+                        </div>    
                     </div>
                 </div>
             </div>
