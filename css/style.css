@@ -701,6 +701,7 @@ header {
 .footer p,
 .footer a {
     color: #F7F7FC;
+    opacity: .8;
 }
 
 .footer ul {
