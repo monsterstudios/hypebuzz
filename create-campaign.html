@@ -140,27 +140,27 @@
                                                     <div class="social-list my-4">
                                                         <div class="d-inline">
                                                             <input required="" type='checkbox' name='instagram' value='' id="instagram" />
-                                                            <label for="instagram" class="input-ig"></label>
+                                                            <label for="instagram" class="input-ig" data-toggle="tooltip" data-placement="top" title="Instagram"></label>
                                                         </div>
                                                         <div class="d-inline mx-3">
                                                             <input required="" type='checkbox' name='youtube' value='' id="youtube"/>
-                                                            <label for="youtube" class="input-yt"></label>
+                                                            <label for="youtube" class="input-yt" data-toggle="tooltip" data-placement="top" title="Youtube"></label>
                                                         </div>
                                                         <div class="d-inline mr-3">
                                                             <input required="" type='checkbox' name='twitter' value='' id="twitter" checked="" />
-                                                            <label for="twitter" class="input-tw"></label>
+                                                            <label for="twitter" class="input-tw" data-toggle="tooltip" data-placement="top" title="Twitter"></label>
                                                         </div>
                                                         <div class="d-inline mr-3">
                                                             <input required="" type='checkbox' name='facebook' value='' id="facebook" />
-                                                            <label for="facebook" class="input-fb"></label>
+                                                            <label for="facebook" class="input-fb" data-toggle="tooltip" data-placement="top" title="Facebook"></label>
                                                         </div>
                                                         <div class="d-inline mr-3">
                                                             <input required="" type='checkbox' name='snapchat' value='' id="snapchat" />
-                                                            <label for="snapchat" class="input-sc"></label>
+                                                            <label for="snapchat" class="input-sc" data-toggle="tooltip" data-placement="top" title="Snapchat"></label>
                                                         </div>
                                                         <div class="d-inline">
                                                             <input required="" type='checkbox' name='tiktok' value='' id="tiktok" />
-                                                            <label for="tiktok" class="input-tt"></label>
+                                                            <label for="tiktok" class="input-tt" data-toggle="tooltip" data-placement="top" title="TikTok"></label>
                                                         </div>
                                                         <div class="help-block with-errors"></div>
                                                     </div>
@@ -425,6 +425,8 @@
         $('select[multiple="multiple"]').multiselect({
             buttonClass: 'btn btn-light btn-block text-left'
         });
+
+        $('[data-toggle="tooltip"]').tooltip();
 
         // Toolbar extra buttons
         var btnSubmit = $('<button></button>').text('Submit')
