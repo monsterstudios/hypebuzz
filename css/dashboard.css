@@ -638,6 +638,10 @@ h1 {
     display: none;
 }
 
+.form-edit button{
+    display: none;
+}
+
 .field-icon {
     float: right;
     margin-left: -25px;
