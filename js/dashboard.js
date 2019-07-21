@@ -23,6 +23,7 @@ $(function() {
                         $(this).closest('.form-edit').find('.selectpicker').removeAttr('disabled');
                         $(this).closest('.form-edit').find('.bootstrap-select').removeClass('disabled');
                         $(this).closest('.form-edit').find('.bootstrap-select button').removeClass('disabled');
+                        $(this).closest('.form-edit').find('button').css('display','block');
                     })
                 });
 
