@@ -51,6 +51,8 @@ $(function() {
                         }
                 
                         reader.readAsDataURL(input.files[0]);
+                        $('button.d-none').removeClass('d-none');
+                        $('#btn-upload').hide();
                     }
                 }
                 
