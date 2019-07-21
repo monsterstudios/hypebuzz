@@ -207,6 +207,19 @@ h1 {
     border-color: #FF015B !important;
 }
 
+.btn-primary-alt,
+.btn-primary-alt:hover,
+.btn-primary-alt:focus{
+    background: #3A559F;
+    color: #ffffff;
+    border-color: #3A559F;
+}
+
+.btn-primary-alt:hover,
+.btn-primary-alt:focus{
+    opacity: .8;
+}
+
 .btn-primary:hover,
 .btn-primary:focus {
     background: #ef2d72 !important;
@@ -674,6 +687,10 @@ h1 {
 
 .social-accounts a>span:hover {
     opacity: .7;
+}
+
+.sa-btn a:hover>i {
+    padding-right: 20px;
 }
 
 .money-earned h4 span {
