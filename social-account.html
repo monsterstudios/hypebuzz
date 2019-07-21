@@ -111,73 +111,74 @@
                                 <p>(Link your social accounts) *Compulsory</p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 col-12">
-                                        <div class="table-responsive social-accounts mt-3">
+                                        <div class="sa-btn">
+                                            <a href="#" class="btn btn-info btn-md btn-icon btn-rounded btn-block my-3"><i class="fab fa-twitter"></i> Connect your twitter account</a>
+                                        </div>
+                                        <div class="sa-btn">
+                                            <a href="#" class="btn btn-primary-alt btn-md btn-icon btn-rounded btn-block my-3"><i class="fab fa-facebook-f"></i> Connect your facebook account</a>
+                                        </div>
+                                        <div class="sa-btn">
+                                            <a href="#" class="btn btn-primary btn-md btn-icon btn-rounded btn-block my-3"><i class="fab fa-instagram"></i> Connect your Instagram account</a>
+                                        </div>
+                                        <div class="sa-btn">
+                                            <a href="#" class="btn btn-danger btn-md btn-icon btn-rounded btn-block my-3"><i class="fab fa-youtube"></i> Connect your Youtube account</a>
+                                        </div>
+                                        <div class="modal fade" id="smModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-sm modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title"">Enter URL</h5>
+                                                    <button type=" button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="form-group row p-3">
+                                                                <input required="" type="text" class="form-control" value="" placeholder="Enter URL">
+                                                                <button type="submit" class="btn btn-primary btn-sm btn-rounded btn-block mt-3">Submit</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive social-accounts my-3">
                                             <table id="table" class="table table-striped">
                                                 <tbody>
                                                     <tr>
                                                         <td>
-                                                            <span class="social icon"><i class="fab fa-facebook-f"></i></span>
+                                                            <span class="social icon"><i class="fas fa-music"></i></span>
                                                         </td>
                                                         <td>
-                                                            Instagram 
+                                                            TikTok
                                                         </td>
                                                         <td>
-                                                            https://www.instagram.com/
+                                                            https://www.tiktok.com/
                                                         </td>
                                                         <td>
-                                                            <a href="#"><span class="edit icon"><i class="fa fa-pen"></i></span></a>
+                                                            <a href="#" data-toggle="modal" data-target="#smModal"><span class="edit icon"><i class="fa fa-pen"></i></span></a>
                                                             <a href="#"><span class="delete icon"><i class="fa fa-times"></i></span></a>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <span class="social icon"><i class="fab fa-youtube"></i></span>
+                                                            <span class="social icon"><i class="fas fa-link"></i></span>
                                                         </td>
                                                         <td>
-                                                            Youtube 
+                                                            Blog
                                                         </td>
                                                         <td>
-                                                            https://www.youtube.com/
+                                                            https://www.someurl.com/
                                                         </td>
                                                         <td>
-                                                            <a href="#"><span class="edit icon"><i class="fa fa-pen"></i></span></a>
-                                                            <a href="#"><span class="delete icon"><i class="fa fa-times"></i></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="social icon"><i class="fab fa-twitter"></i></span>
-                                                        </td>
-                                                        <td>
-                                                            Twitter 
-                                                        </td>
-                                                        <td>
-                                                            https://www.twitter.com/
-                                                        </td>
-                                                        <td>
-                                                            <a href="#"><span class="edit icon"><i class="fa fa-pen"></i></span></a>
-                                                            <a href="#"><span class="delete icon"><i class="fa fa-times"></i></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="social icon"><i class="fab fa-facebook-f"></i></span>
-                                                        </td>
-                                                        <td>
-                                                            Facebook 
-                                                        </td>
-                                                        <td>
-                                                            https://www.facebook.com/
-                                                        </td>
-                                                        <td>
-                                                            <a href="#"><span class="edit icon"><i class="fa fa-pen"></i></span></a>
+                                                            <a href="#" data-toggle="modal" data-target="#smModal"><span class="edit icon"><i class="fa fa-pen"></i></span></a>
                                                             <a href="#"><span class="delete icon"><i class="fa fa-times"></i></span></a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-rounded btn-icon btn-lg mt-4">Add Social Media <i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
