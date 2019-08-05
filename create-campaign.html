@@ -137,7 +137,7 @@
                                             <div id="step-1" class="">
                                                 <p class="pt-5 pb-3">Select the key platforms you’d like influencers to promote on (You can select more than one )</p>
                                                 <div id="form-step-0" role="form" data-toggle="validator">
-                                                    <div class="social-list my-4">
+                                                    <div class="social-list my-4 pb-3">
                                                         <div class="d-inline">
                                                             <input required="" type='checkbox' name='instagram' value='' id="instagram" />
                                                             <label for="instagram" class="input-ig" data-toggle="tooltip" data-placement="top" title="Instagram"></label>
@@ -164,30 +164,7 @@
                                                         </div>
                                                         <div class="help-block with-errors"></div>
                                                     </div>
-                                                    <div class="form-group row my-4">
-                                                        <div class="col-sm-8">
-                                                            <label class="col-form-label mt-3">Select the content type(s) you'd like creators to make</label>
-                                                            <select required="" class="form-control" multiple="multiple">
-                                                                <option>Video</option>
-                                                                <option>Comedic Sketch</option>
-                                                                <option>Photograph</option>
-                                                                <option>Music</option>
-                                                                <option>Product / service review</option>
-                                                                <option>Blog Post</option>
-                                                                <option>Tweets & Retweet</option>
-                                                                <option>Tutorial</option>
-                                                                <option>Stories [instagram]</option>
-                                                            </select>
-                                                            <div class="help-block with-errors"></div>
-                                                        </div>
-                                                    </div>
-                                                     <div class="form-group row">
-                                                        <label class="col-sm-8 col-form-label">How many pieces of unique content do you want ?</label>
-                                                        <div class="col-sm-8">
-                                                            <input required="" type="number" class="form-control" value="">
-                                                            <div class="help-block with-errors"></div>
-                                                        </div>
-                                                    </div>
+                                                    <div class="accordion" id="accordionSocial"></div>                 
                                                 </div>
                                             </div>
                                             <div id="step-2" class="">
@@ -422,10 +399,6 @@
     <script src="js/jquery.smartWizard.min.js"></script>
     <script src="js/dashboard.js"></script>
     <script>
-        $('select[multiple="multiple"]').multiselect({
-            buttonClass: 'btn btn-light btn-block text-left'
-        });
-
         $('[data-toggle="tooltip"]').tooltip();
 
         // Toolbar extra buttons
