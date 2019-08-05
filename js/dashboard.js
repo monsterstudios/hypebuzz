@@ -7,6 +7,7 @@ $(function() {
         init: function() {
             App.General();
             App.Currency();
+            App.CreateCampaign();
         },
 
         General: function() {
@@ -52,7 +53,7 @@ $(function() {
                 
                         reader.readAsDataURL(input.files[0]);
                         $('button.d-none').removeClass('d-none');
-                        $('#btn-upload').hide();
+                        // $('#btn-upload').hide();
                     }
                 }
                 
@@ -89,6 +90,93 @@ $(function() {
                 }
                 window.onresize = getPageHeight();
                 getPageHeight();
+            });
+        },
+
+        CreateCampaign: function () {
+            $('.input-ig').on('click',function () {
+                if ($('input#instagram').is(':checked')) {
+                    //Do nothing
+                    $('.card-instagram').remove();
+                } else {
+                    //Do something
+                    $('#accordionSocial').append('<div class="card card-instagram"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"> Instagram </button></h2></div><div id="collapseOne" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">How many pieces of unique content do you want ?</label><div class="col-sm-8"> <input required="" type="number" class="form-control" value=""><div class="help-block with-errors"></div></div></div></div></div></div>').ready(function () {
+                        // enter code here
+                        $('select[multiple="multiple"]').multiselect({
+                            buttonClass: 'btn btn-light btn-block text-left'
+                        });
+                    });
+                }
+            });
+            $('.input-yt').on('click',function () {
+                if ($('input#youtube').is(':checked')) {
+                    //Do nothing
+                    $('.card-youtube').remove();
+                } else {
+                    //Do something
+                    $('#accordionSocial').append('<div class="card card-youtube"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"> Youtube </button></h2></div><div id="collapseTwo" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">How many pieces of unique content do you want ?</label><div class="col-sm-8"> <input required="" type="number" class="form-control" value=""><div class="help-block with-errors"></div></div></div></div></div></div>').ready(function () {
+                        // enter code here
+                        $('select[multiple="multiple"]').multiselect({
+                            buttonClass: 'btn btn-light btn-block text-left'
+                        });
+                    });
+                }
+            });
+            $('.input-tw').on('click',function () {
+                if ($('input#twitter').is(':checked')) {
+                    //Do nothing
+                    $('.card-twitter').remove();
+                } else {
+                    //Do something
+                    $('#accordionSocial').append('<div class="card card-twitter"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"> Twitter </button></h2></div><div id="collapseThree" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">How many pieces of unique content do you want ?</label><div class="col-sm-8"> <input required="" type="number" class="form-control" value=""><div class="help-block with-errors"></div></div></div></div></div></div>').ready(function () {
+                        // enter code here
+                        $('select[multiple="multiple"]').multiselect({
+                            buttonClass: 'btn btn-light btn-block text-left'
+                        });
+                    });
+                }
+            });
+            $('.input-fb').on('click',function () {
+                if ($('input#facebook').is(':checked')) {
+                    //Do nothing
+                    $('.card-facebook').remove();
+                } else {
+                    //Do something
+                    $('#accordionSocial').append('<div class="card card-facebook"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"> Facebook </button></h2></div><div id="collapseFour" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">How many pieces of unique content do you want ?</label><div class="col-sm-8"> <input required="" type="number" class="form-control" value=""><div class="help-block with-errors"></div></div></div></div></div></div>').ready(function () {
+                        // enter code here
+                        $('select[multiple="multiple"]').multiselect({
+                            buttonClass: 'btn btn-light btn-block text-left'
+                        });
+                    });
+                }
+            });
+            $('.input-sc').on('click',function () {
+                if ($('input#snapchat').is(':checked')) {
+                    //Do nothing
+                    $('.card-snapchat').remove();
+                } else {
+                    //Do something
+                    $('#accordionSocial').append('<div class="card card-snapchat"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"> Snapchat </button></h2></div><div id="collapseFive" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">How many pieces of unique content do you want ?</label><div class="col-sm-8"> <input required="" type="number" class="form-control" value=""><div class="help-block with-errors"></div></div></div></div></div></div>').ready(function () {
+                        // enter code here
+                        $('select[multiple="multiple"]').multiselect({
+                            buttonClass: 'btn btn-light btn-block text-left'
+                        });
+                    });
+                }
+            });
+            $('.input-tt').on('click',function () {
+                if ($('input#tiktok').is(':checked')) {
+                    //Do nothing
+                    $('.card-tiktok').remove();
+                } else {
+                    //Do something
+                    $('#accordionSocial').append('<div class="card card-tiktok"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix"> Tiktok </button></h2></div><div id="collapseSix" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">How many pieces of unique content do you want ?</label><div class="col-sm-8"> <input required="" type="number" class="form-control" value=""><div class="help-block with-errors"></div></div></div></div></div></div>').ready(function () {
+                        // enter code here
+                        $('select[multiple="multiple"]').multiselect({
+                            buttonClass: 'btn btn-light btn-block text-left'
+                        });
+                    });
+                }
             });
         },
 
