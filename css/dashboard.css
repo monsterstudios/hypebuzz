@@ -1418,6 +1418,51 @@ h1 {
     width: 100%;
 }
 
+.card-instagram .card-header {
+    background: #D32477;
+}
+
+.card-youtube .card-header{
+    background: #FF0000;
+}
+
+.card-twitter .card-header{
+    background: #198DD4;
+}
+
+.card-facebook .card-header{
+    background: #3A559F;
+}
+
+.card-snapchat .card-header{
+    background: #FFFC00;
+}
+
+.card-tiktok .card-header{
+    background: #FF1E64;
+}
+
+#accordionSocial .card-header button {
+    color: #fff!important;
+}
+
+.card-header {
+  position: relative;
+}
+
+.card-header button::after {
+    content: "▲";
+    color: #fff;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+
+}
+
+.card-header button[aria-expanded="true"]::after {
+    content: "▼";
+}
+
 .footer {
     background: #000000;
     -webkit-box-shadow: 0 2px 4px 0 rgba(20, 20, 40, 0.10);
