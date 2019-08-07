@@ -165,6 +165,43 @@
         width: 100%!important;
         margin-bottom: 20px!important;
     }
+
+    .fb-profile-text>h1{
+        font-weight: 700;
+        font-size:16px;
+    }
+
+    .fb-image-profile
+    {
+        margin: -45px 10px 0px 25px;
+        z-index: 9;
+        width: 20%; 
+    }
+    .fb-profile-text {
+        padding: 15px 0!important;
+    }
+
+    .reviews {
+        padding: 20px 0!important;
+    }
+
+    .fb-profile-text h1 span {
+        padding-left: 0!important;
+        left: 0!important;
+    }
+
+    .fb-profile-text h1 .btn {
+        position: relative!important;
+        left: 0!important;
+    }
+
+    .fb-image-profile {
+        display: none!important;
+    }
+
+    .fb-profile {
+        padding-top: 15px!important;
+    }
 }
 
 
@@ -1465,6 +1502,143 @@ h1 {
 
 .card-header button[aria-expanded="true"]::after {
     content: "▼";
+}
+
+.fb-profile img.fb-image-lg{
+    z-index: 0;
+    width: 100%;  
+    height: 280px;
+    margin-bottom: 10px;
+}
+
+.fb-image-profile
+{
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
+    width: 20%; 
+}
+
+.fb-profile-text {
+    padding: 15px 50px;
+}
+
+.fb-profile-text h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    position: relative;
+}
+
+.fb-profile-text h1 span {
+    padding-left: 25px;
+    display: block;
+    position: relative;
+    left: 25px;
+}
+
+.fb-profile-text h1 span.rating {
+    font-size: 18px;
+    display: block;
+    position: relative;
+    left: 25px;
+    color: #FEC600;
+    margin-top: 10px;
+}
+
+.fb-profile-text h1 span.rating a{
+    color: #FEC600;
+}
+
+.fb-profile-text h1 .btn {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+
+.fb-profile-text p {
+    padding-top: 15px;
+}
+
+.reviews {
+    padding: 20px 60px;
+}
+
+.reviews .media-body {
+    padding-left: 20px;
+}
+
+.reviews .media-heading {
+    font-size: 20px;
+    margin-bottom: 5px; 
+}
+
+.reviews .media-body .rating {
+    font-size: 14px;
+    color: #fec600;
+}
+
+.reviews .media-body .rating a {
+    color: #fec600;
+}
+
+.form-header {
+    border-bottom: 1px solid #dbdbdb;
+    background: #fff;
+    padding: 40px 0 20px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 40px 0 0;
+}
+
+.worker-block h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.worker-block .rating,
+.worker-block .rating a{
+    color: #FEC600;
+}
+
+.worker-block .media-body {
+    padding-left: 30px;
+}
+
+.worker-block {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.worker-block .skills .label {
+    color: #fff;
+    background: #ff015b;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+.worker-block .rates {
+    float: right;
+}
+
+.page-item.active .page-link {
+    background-color: #ff015b;
+    border-color: #ff015b;
+}
+
+.page-link {
+    color: #ff015b;
+}
+
+.page-link:hover,
+.page-link:focus{
+    color: #ff015b;
+}
+
+.form-header h4{
+    margin-bottom: 0;
+    margin-top: 5px
 }
 
 .footer {
