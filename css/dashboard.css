@@ -1550,7 +1550,7 @@ h1 {
 
 .fb-profile-text h1 span.rating {
     font-size: 18px;
-    display: block;
+    display: inline;
     position: relative;
     color: #FEC600;
     margin-top: 10px;
@@ -1564,6 +1564,7 @@ h1 {
     position: absolute;
     right: 50px;
     bottom: 0;
+    top: 25px;
 }
 
 .fb-profile-text p {
@@ -1571,7 +1572,7 @@ h1 {
 }
 
 .reviews {
-    padding: 20px 60px;
+    padding: 20px 25px;
 }
 
 .reviews .media-body {
