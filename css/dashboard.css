@@ -179,6 +179,7 @@
     }
     .fb-profile-text {
         padding: 15px 0!important;
+        width: 100%!important;
     }
 
     .reviews {
@@ -192,7 +193,8 @@
 
     .fb-profile-text h1 .btn {
         position: relative!important;
-        left: 0!important;
+        left: 30px!important;
+        top: -30px!important;
     }
 
     .fb-image-profile {
@@ -564,6 +566,7 @@ h1 {
 
 .profile-container img {
     width: 40px;
+    height: auto;
     padding: 0;
 }
 
@@ -1562,7 +1565,7 @@ h1 {
 
 .fb-profile-text h1 .btn {
     position: absolute;
-    right: 50px;
+    right: 0;
     bottom: 0;
     top: 25px;
 }
@@ -1654,104 +1657,9 @@ h1 {
     margin-top: 5px
 }
 
-.portfolio-section ul {
-    padding: 0;
-    list-style: none;
-    margin-top: 30px;
-}
-
-.portfolio-wrapper {
-    position: relative;
-    max-width: 300px;
-}
-
-.portfolio-image {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border: 1px solid #ddd;
-}
-
-.portfolio-title {
-    position: absolute;
-    top: 44%;
-    left: 0;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 100%;
-    padding: 0 20px;
-    text-align: center;
-    opacity: 0;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.portfolio-action {
-    position: absolute;
-    left: 0;
-    bottom: 45px;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    -webkit-transition: 0.5s ease-out;
-    -o-transition: 0.5s ease-out;
-    transition: 0.5s ease-out;
-}
-
-.portfolio-action a {
-    padding: 0 10px;
-}
-
-.portfolio-action a>i {
-    padding: 0 5px;
-}
-
-.portfolio-wrapper:hover .portfolio-title {
-    opacity: 1;
-}
-
-.portfolio-wrapper:hover .portfolio-action {
-    opacity: 1;
-}
-
-.portfolio-section ul > li {
-    width: calc(100%/3.03);
-    display: inline-block;
-    padding: 8px 5px;
-}
-
-.portfolio-wrapper:hover .portfolio-image img {
-    opacity: 0;
-}
-
-.portfolio-section .chosen-container.chosen-container-multi {
-    width: 100%!important;
-}
-
-.portfolio-section .chosen-container.chosen-with-drop .chosen-drop li {
-    width: 100%;
-}
-
-.portfolio-section .modal{
-    color: #999;
-}
-
-.portfolio-section .modal .description {
-    margin-bottom: 15px;
-}
-
-.portfolio-section h4 {
-    padding: 0 20px;
-}
-
-.portfolio-section h4 a {
-    float: right;
-}
-
-.portfolio-section h4>span {
-    position: relative;
-    top: 25px;
+.social-links{
+    display: table-cell;
+    padding-bottom: 15px;
 }
 
 .footer {
