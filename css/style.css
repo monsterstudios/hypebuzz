@@ -829,10 +829,10 @@ hr {
     z-index: 999;
 }
 
-.card.brands {
+/*.card.brands {
     background: #FF015B;
     color: #fff;
-}
+}*/
 
 .card.pricing{
     -webkit-box-shadow: 0 10px 55px rgba(102, 29, 56, 0.3);
@@ -852,6 +852,12 @@ hr {
 
 .card.pricing .card-header {
     font-size: 26px;
+}
+
+.card.pricing .card-price span {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #F20000;
 }
 
 .card.brands .pricing-features p::before{
