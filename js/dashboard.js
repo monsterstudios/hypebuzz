@@ -100,23 +100,46 @@ $(function() {
                     $('.card-instagram').remove();
                 } else {
                     //Do something
-                    $('#accordionSocial').append('<div class="card card-instagram"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"> Instagram </button></h2></div><div id="collapseOne" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"><div class="content-figure"><input id="txt_1" type="hidden"></div></div></div></div></div></div>').ready(function () {
+                    $('#accordionSocial').append('<div class="card card-instagram"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"> Instagram </button></h2></div><div id="collapseOne" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option value="1">Video</option><option value="2">Comedic Sketch</option><option value="3">Photograph</option><option value="4">Music</option><option value="5">Product / service review</option><option value="6">Blog Post</option><option value="7">Tweets & Retweet</option><option value="8">Tutorial</option><option value="9">Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"><div class="content-figure"></div></div></div></div></div></div>').ready(function () {
                         // enter code here
-                        $('select[multiple="multiple"]').multiselect({
+                        $('.card-instagram select').multiselect({
                             buttonClass: 'btn btn-light btn-block text-left',
                             onChange: function(option, checked, select){
-                             //Get all selected values   
-                             //var selectedOptions = $('select[multiple="multiple"]').val();
-                                  var lastid = $(".content-figure input:last").attr("id");
-                                  var split_id = lastid.split("_");
-                                  var nextindex = Number(split_id[1]) + 1;
+                                var orderCount = 0;
+                                var selected = [];
                                 if ($(option).is(':selected')){
-                                    $('.content-figure').append('<input id="txt_'+ nextindex +'" class="form-control my-3" type="number" placeholder="'+$(option).val()+'">');
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('.card-instagram .content-figure').append('<input id="txt_i'+ text +'" class="form-control my-3" type="number" placeholder="'+$(option).text()+'">');
+                     
                                 }else{
-                                    var id = $('.content-figure input:last').attr("id");
-                                    var split_id = id.split("_");
-                                    var deleteindex = split_id[1];
-                                    $('#txt_'+deleteindex).remove();
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('#txt_i'+text).remove();
                                 }
                             } 
                         });
@@ -129,14 +152,48 @@ $(function() {
                     $('.card-youtube').remove();
                 } else {
                     //Do something
-                    $('#accordionSocial').append('<div class="card card-youtube"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"> Youtube </button></h2></div><div id="collapseTwo" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"> <div class="content-figure"></div></div></div></div></div></div>').ready(function () {
+                    $('#accordionSocial').append('<div class="card card-youtube"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"> Youtube </button></h2></div><div id="collapseTwo" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option value="1">Video</option><option value="2">Comedic Sketch</option><option value="3">Photograph</option><option value="4">Music</option><option value="5">Product / service review</option><option value="6">Blog Post</option><option value="7">Tweets & Retweet</option><option value="8">Tutorial</option><option value="9">Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"> <div class="content-figure"></div></div></div></div></div></div>').ready(function () {
                         // enter code here
-                        $('select[multiple="multiple"]').multiselect({
+                        $('.card-youtube select').multiselect({
                             buttonClass: 'btn btn-light btn-block text-left',
                             onChange: function(option, checked, select){
-                             var selectedOptions = $('select[multiple="multiple"]').val();
-                             $('.content-figure').append('<input class="form-control my-3" type="number" placeholder="'+$(option).val()+'">');
-                            } 
+                                var orderCount = 0;
+                                var selected = [];
+                                if ($(option).is(':selected')){
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('.card-youtube .content-figure').append('<input id="txt_y'+ text +'" class="form-control my-3" type="number" placeholder="'+$(option).text()+'">');
+                     
+                                }else{
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('#txt_y'+text).remove();
+                                }
+                            }
                         });
                     });
                 }
@@ -147,13 +204,47 @@ $(function() {
                     $('.card-twitter').remove();
                 } else {
                     //Do something
-                    $('#accordionSocial').append('<div class="card card-twitter"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"> Twitter </button></h2></div><div id="collapseThree" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"> <div class="content-figure"></div></div></div></div></div></div>').ready(function () {
+                    $('#accordionSocial').append('<div class="card card-twitter"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"> Twitter </button></h2></div><div id="collapseThree" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option value="1">Video</option><option value="2">Comedic Sketch</option><option value="3">Photograph</option><option value="4">Music</option><option value="5">Product / service review</option><option value="6">Blog Post</option><option value="7">Tweets & Retweet</option><option value="8">Tutorial</option><option value="9">Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"> <div class="content-figure"></div></div></div></div></div></div>').ready(function () {
                         // enter code here
-                        $('select[multiple="multiple"]').multiselect({
+                        $('.card-twitter sselect').multiselect({
                             buttonClass: 'btn btn-light btn-block text-left',
                             onChange: function(option, checked, select){
-                             var selectedOptions = $('select[multiple="multiple"]').val();
-                             $('.content-figure').append('<input class="form-control my-3" type="number" placeholder="'+$(option).val()+'">');
+                                var orderCount = 0;
+                                var selected = [];
+                                if ($(option).is(':selected')){
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('.card-twitter .content-figure').append('<input id="txt_t'+ text +'" class="form-control my-3" type="number" placeholder="'+$(option).text()+'">');
+                     
+                                }else{
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('#txt_t'+text).remove();
+                                }
                             } 
                         });
                     });
@@ -165,13 +256,47 @@ $(function() {
                     $('.card-facebook').remove();
                 } else {
                     //Do something
-                    $('#accordionSocial').append('<div class="card card-facebook"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"> Facebook </button></h2></div><div id="collapseFour" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"> <div class="content-figure"></div></div></div></div></div></div>').ready(function () {
+                    $('#accordionSocial').append('<div class="card card-facebook"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"> Facebook </button></h2></div><div id="collapseFour" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option value="1">Video</option><option value="2">Comedic Sketch</option><option value="3">Photograph</option><option value="4">Music</option><option value="5">Product / service review</option><option value="6">Blog Post</option><option value="7">Tweets & Retweet</option><option value="8">Tutorial</option><option value="9">Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"> <div class="content-figure"></div></div></div></div></div></div>').ready(function () {
                         // enter code here
-                        $('select[multiple="multiple"]').multiselect({
+                        $('.card-facebook select').multiselect({
                             buttonClass: 'btn btn-light btn-block text-left',
                             onChange: function(option, checked, select){
-                             var selectedOptions = $('select[multiple="multiple"]').val();
-                             $('.content-figure').append('<input class="form-control my-3" type="number" placeholder="'+$(option).val()+'">');
+                                var orderCount = 0;
+                                var selected = [];
+                                if ($(option).is(':selected')){
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('.card-facebook .content-figure').append('<input id="txt_f'+ text +'" class="form-control my-3" type="number" placeholder="'+$(option).text()+'">');
+                     
+                                }else{
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('#txt_f'+text).remove();
+                                }
                             } 
                         });
                     });
@@ -183,13 +308,47 @@ $(function() {
                     $('.card-snapchat').remove();
                 } else {
                     //Do something
-                    $('#accordionSocial').append('<div class="card card-snapchat"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"> Snapchat </button></h2></div><div id="collapseFive" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"> <div class="content-figure"></div></div></div></div></div></div>').ready(function () {
+                    $('#accordionSocial').append('<div class="card card-snapchat"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"> Snapchat </button></h2></div><div id="collapseFive" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option value="1">Video</option><option value="2">Comedic Sketch</option><option value="3">Photograph</option><option value="4">Music</option><option value="5">Product / service review</option><option value="6">Blog Post</option><option value="7">Tweets & Retweet</option><option value="8">Tutorial</option><option value="9">Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"> <div class="content-figure"></div></div></div></div></div></div>').ready(function () {
                         // enter code here
-                        $('select[multiple="multiple"]').multiselect({
+                        $('.card-snapchat select').multiselect({
                             buttonClass: 'btn btn-light btn-block text-left',
                             onChange: function(option, checked, select){
-                             var selectedOptions = $('select[multiple="multiple"]').val();
-                             $('.content-figure').append('<input class="form-control my-3" type="number" placeholder="'+$(option).val()+'">');
+                                var orderCount = 0;
+                                var selected = [];
+                                if ($(option).is(':selected')){
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('.card-snapchat .content-figure').append('<input id="txt_sc'+ text +'" class="form-control my-3" type="number" placeholder="'+$(option).text()+'">');
+                     
+                                }else{
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('#txt_sc'+text).remove();
+                                }
                             } 
                         });
                     });
@@ -201,14 +360,48 @@ $(function() {
                     $('.card-tiktok').remove();
                 } else {
                     //Do something
-                    $('#accordionSocial').append('<div class="card card-tiktok"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix"> Tiktok </button></h2></div><div id="collapseSix" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option>Video</option><option>Comedic Sketch</option><option>Photograph</option><option>Music</option><option>Product / service review</option><option>Blog Post</option><option>Tweets & Retweet</option><option>Tutorial</option><option>Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"> <div class="content-figure"></div></div></div></div></div></div>').ready(function () {
+                    $('#accordionSocial').append('<div class="card card-tiktok"><div class="card-header"><h2 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix"> Tiktok </button></h2></div><div id="collapseSix" class="collapse show" data-parent="#accordionSocial"><div class="card-body"><div class="form-group row my-4"><div class="col-sm-8"> <label class="col-form-label mt-3">Select the content type(s) you&#39;d like creators to make</label> <select required="" class="form-control" multiple="multiple"><option value="1">Video</option><option value="2">Comedic Sketch</option><option value="3">Photograph</option><option value="4">Music</option><option value="5">Product / service review</option><option value="6">Blog Post</option><option value="7">Tweets & Retweet</option><option value="8">Tutorial</option><option value="9">Stories [instagram]</option> </select><div class="help-block with-errors"></div></div></div><div class="form-group row"> <label class="col-sm-8 col-form-label">Enter required number of content per platform</label><div class="col-sm-8"> <div class="content-figure"></div></div></div></div></div></div>').ready(function () {
                         // enter code here
-                        $('select[multiple="multiple"]').multiselect({
+                        $('.card-tiktok select').multiselect({
                             buttonClass: 'btn btn-light btn-block text-left',
                             onChange: function(option, checked, select){
-                             var selectedOptions = $('select[multiple="multiple"]').val();
-                             $('.content-figure').append('<input class="form-control my-3" type="number" placeholder="'+$(option).val()+'">');
-                            } 
+                                var orderCount = 0;
+                                var selected = [];
+                                if ($(option).is(':selected')){
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('.card-tiktok .content-figure').append('<input id="txt_tt'+ text +'" class="form-control my-3" type="number" placeholder="'+$(option).text()+'">');
+                     
+                                }else{
+                                    orderCount++;
+                                    $(option).data('order', orderCount);
+                                    $(option).each(function() {
+                                        selected.push([$(this).val(), $(this).data('order')]);
+                                    });               
+                                    selected.sort(function(a, b) {
+                                        return a[1] - b[1];
+                                    });
+                         
+                                    var text = '';
+                                    for (var i = 0; i < selected.length; i++) {
+                                        text += selected[i][0] + ', ';
+                                    }
+                                    text = text.substring(0, text.length - 2);
+                                    $('#txt_tt'+text).remove();
+                                }
+                            }  
                         });
                     });
                 }
